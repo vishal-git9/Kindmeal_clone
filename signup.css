@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Montserrat:wght@500&family=Poppins:wght@300;500;700&family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.sign-parent{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.three{
+    width: 25%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 20px;
+    gap: 20px;
+}
+.three>div{
+    text-align: center;
+    border: 1px solid gray;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: small;
+}
+.three>div:nth-child(3)>h3{
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 3px;
+}
+.three>div:nth-child(3)>a{
+    margin-top: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+.half{
+    text-align: left;
+    width: 70%;
+    padding-top: 30px;
+}
+input{
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 10px;
+}
+input:focus{
+    outline: none;
+}
+
+#forName>div{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+/* #forName>p{
+    margin-right: 40px;
+    margin-top: 10px;
+} */
+
+#forName>div>div{
+    font-size: small;
+    color: gray;
+}
+
+input, select{
+    padding: 5px;
+}
+
+.half>div>div{
+    position: absolute;
+    left: 650px;
+    margin-top: -5px;
+}
+
+.half>div{
+    display: flex;
+    gap: 50px;
+    /* text-align: left; */
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.half>div>p{
+    margin-right: 40px;
+    margin-top: 8px;
+}
+
+.half>div>div>p{
+    font-size: small;
+    color: gray;
+}
+
+.half>button{
+    background-color: red;
+    padding: 10px;
+    border: none;
+    display: block;
+    margin-top: 30px;
+    width: 20%;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.image-bottom{
+    width: 100%;
+    background-color: #E0E0E0;
+    margin-top: 80px;
+}
+.image-bottom>div{
+    width: 70%;
+    margin: auto;
+    padding-top: 30px;
+}
+.image-bottom>div>img{
+    width: 100%;
+}

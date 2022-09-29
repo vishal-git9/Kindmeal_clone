@@ -17,32 +17,73 @@
   </head>
   <body>
     <div class="nav-1">
-        <div>
-          <img src="https://www.kindmeal.my/images/logo-kindmeal.png" alt="" width="100%"/>
+      <div>
+        <img src="https://www.kindmeal.my/images/logo-kindmeal.png" alt="" width="100%"/>
+      </div>
+      <div>
+        <a href="https://twitter.com/KindMeal"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://www.facebook.com/KindMeal.my"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.kindmeal.my/widget.htm"><i class="fa-sharp fa-solid fa-link"></i></a>
+    </div>
+      <div>
+        <a href="">login</a>
+       <a href="#"  id="face">Facebook</a>
+       <a href="#"  id="email">Email</a>
+       <a href="#"  id="signup">sign up</a>
+      </div>
+    </div>
+    <div class="nav-2">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="mealdeal.html">Meal Deals</a></li>
+            <li>Kind Moments</li>
+            <li>Hot picks</li>
+            <li>Recipes</li>
+            <li>Directory</li>
+            <li>Articles</li>
+            <li>Help</li>
+        </ul>
+    </div>
+    <div id="login-modal" class="log-visible">
+            <i id="close" class="fa-solid fa-xmark"></i>
+            <img src="https://www.kindmeal.my/images/logo-kindmeal.png" alt="">
+            <h2>Member Login</h2>
+            <form id="get-login">
+                <input type="email" id="email" placeholder="Your email">
+                <input type="password" id="pass" placeholder="Your password">
+                <button type="submit">Login</button>
+            </form>
+            <button><i class="fa-brands fa-facebook"></i>Login with Facebook</button>
+            <div>
+                <a href=""> forgot password</a>
+            <a href="">not a member? sign up free</a></div>
+    </div>
+    <div id="signup-modal" class="log-visible">
+        <i id="signclose" class="fa-solid fa-xmark"></i>
+        <img src="https://www.kindmeal.my/images/logo-kindmeal.png" alt="">
+        <h2>Join KindMeal For FREE Now</h2>
+        <p>Please select the type of membership to proceed</p>
+        <div id="signup-html">
+            <img src="https://www.kindmeal.my/images/join_normal.png" alt="">
+            <div><h3>Food Lover</h3>
+            <p>
+                Join FREE to enjoy yummy deals, share reviews & meet our community of compassionate food lovers.
+            </p></div>
         </div>
-        <div><i class="fa-brands fa-facebook"></i>
-          <i class="fa-brands fa-twitter"></i>
-          <i class="fa-sharp fa-solid fa-link"></i>
-      </div>
         <div>
-          <span>login</span>
-          <span id="face">Facebook</span>
-          <span id="mail">Email</span>
-          <span>Sign Up</span>
+            <img src="https://www.kindmeal.my/images/join_shop.png" alt="">
+            <div>
+            <h3>Restaurant/shop Owner</h3>
+            <p>
+            List your food outlet, create exciting vegetarian deals & showcase your delicious menu for FREE. Enjoy our yummy deals, share reviews & meet food lovers too.
+            </p>
         </div>
-      </div>
-      <div class="nav-2">
-          <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="mealdeal.html">Meal Deals</a></li>
-              <li>Kind Moments</li>
-              <li>Hot picks</li>
-              <li>Recipes</li>
-              <li>Directory</li>
-              <li>Articles</li>
-              <li>Help</li>
-          </ul>
-      </div>
+        </div>
+        <div>
+           <a href="">member login</a>
+            <a href=""> forgot password?</a>
+        </div>
+    </div>
 
       <!-- meals deals start -->
     <div id="search-browse">
@@ -571,5 +612,6 @@
           </div>
       </div>
     </div>
+    <script src="mealdeal.js"></script>
   </body>
 </html>

@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="kindmoment.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div class="nav-1">
+        <div>
+          <img src="https://www.kindmeal.my/images/logo-kindmeal.png" alt="" width="100%"/>
+        </div>
+        <div>
+          <a href="https://twitter.com/KindMeal"><i class="fa-brands fa-twitter"></i></a>
+          <a href="https://www.facebook.com/KindMeal.my"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.kindmeal.my/widget.htm"><i class="fa-sharp fa-solid fa-link"></i></a>
+      </div>
+        <div>
+          <a href="">login</a>
+         <a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=292733157519852&kid_directed_site=0&app_id=292733157519852&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv2.9%2Fdialog%2Foauth%3Fclient_id%3D292733157519852%26redirect_uri%3Dhttps%253A%252F%252Fwww.kindmeal.my%252Flogin.php%253Faction%253Dfacebook%26state%3D4fc6fa69fc1715a896dce6105caf7bec%26display%3Dpopup%26scope%3Demail%252Cuser_birthday%252Cuser_location%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3D5bd4a5d9-6e63-4a1b-8ef9-af05b0807d39%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fwww.kindmeal.my%2Flogin.php%3Faction%3Dfacebook%26error%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3D4fc6fa69fc1715a896dce6105caf7bec%23_%3D_&display=popup&locale=en_GB&pl_dbl=0"  id="face">Facebook</a>
+         <a href="#"  id="email">Email</a>
+         <a href="#"  id="signup">sign up</a>
+        </div>
+      </div>
+      <div class="nav-2">
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="mealdeal.html">Meal Deals</a></li>
+              <li><a href="mealdeal.html">Kind Moments</a></li>
+              <li><a href="mealdeal.html">Hot picks</a></li>
+              <li><a href="mealdeal.html">Recipes</a></li>
+              <li><a href="mealdeal.html">Directory</a></li>
+              <li><a href="mealdeal.html">Articles</a></li>
+              <li><a href="mealdeal.html">Help</a></li>
+          </ul>
+      </div>
+      <div id="login-modal" class="log-visible">
+              <i id="close" class="fa-solid fa-xmark"></i>
+              <img src="https://www.kindmeal.my/images/logo-kindmeal.png" alt="">
+              <h2>Member Login</h2>
+              <form id="get-login">
+                  <input type="email" id="email" placeholder="Your email">
+                  <input type="password" id="pass" placeholder="Your password">
+                  <button type="submit">Login</button>
+              </form>
+              <button><i class="fa-brands fa-facebook"></i>Login with Facebook</button>
+              <div>
+                  <a href=""> forgot password</a>
+              <a href="">not a member? sign up free</a></div>
+      </div>
+      <div id="signup-modal" class="log-visible">
+          <i id="signclose" class="fa-solid fa-xmark"></i>
+          <img src="https://www.kindmeal.my/images/logo-kindmeal.png" alt="">
+          <h2>Join KindMeal For FREE Now</h2>
+          <p>Please select the type of membership to proceed</p>
+          <div id="signup-html">
+              <img src="https://www.kindmeal.my/images/join_normal.png" alt="">
+              <div><h3>Food Lover</h3>
+              <p>
+                  Join FREE to enjoy yummy deals, share reviews & meet our community of compassionate food lovers.
+              </p></div>
+          </div>
+          <div>
+              <img src="https://www.kindmeal.my/images/join_shop.png" alt="">
+              <div>
+              <h3>Restaurant/shop Owner</h3>
+              <p>
+              List your food outlet, create exciting vegetarian deals & showcase your delicious menu for FREE. Enjoy our yummy deals, share reviews & meet food lovers too.
+              </p>
+          </div>
+          </div>
+          <div>
+             <a href="">member login</a>
+              <a href=""> forgot password?</a>
+          </div>
+      </div>
+
+      <!-- building kindmoment -->
+
+      <div class="header">
+        <div>
+            <div>
+            <h2>
+                KindMoments   |   Saving Lives with Yummy Photos
+            </h2><br>
+            <p>Discover new, delicious meat-free cuisines enjoyed by other compassionate food lovers. Share your interesting KindMoments, and build your own fans and followers to encourage kind, healthy meals.</p><br>
+            <p>Download our mobile app to easily showcase your masterpieces and interact with food lovers.
+            </p><br>
+            <p>Get started sharing your tasty moments now.	
+            </p><br>
+        </div>
+        <div>
+            <h3>Share Your KindMoment</h3>
+            <p>Interesting food or restaurant? Share with 1000s of food lovers!</p>
+            <button>share</button>
+        </div>
+        </div>
+      </div>
+<!-- building the mid part -->
+        <div class="filter-btn">
+            <div>
+                <button>Moments</button>
+                <button>Deal Reviews</button>
+                <button>Following</button>
+            </div>
+            <div>
+                <input type="text" placeholder="search user or shop">
+                <select id="">
+                    <option>All location</option>
+                    <option value="">klangvalley</option>
+                    <option value="">kuala lampur</option>
+                    <option value="">petling jaya</option>
+                    <option value="">ambang</option>
+                    <option value="">bangsar</option>
+                    <option value="">bangsar south</option>
+                    <option value="">bunkit</option>
+                    <option value="">cheras</option>
+                    <option value="">Damansara heights</option>
+                    <option value="">Damansara utams</option>
+                    <option value="">ipoh</option>
+                    <option value="">kepong</option>
+                    <option value="">kelang</option>
+                </select>
+                <button>search</button>
+            </div>
+        </div>
+
+        <div class="pages">
+            <div>
+                <div>Pages:</div>
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div>7</div>
+                <div>8</div>
+                <div>9</div>
+                <div>10</div>
+            </div>
+            <button>next</button>
+        </div>
+
+
+<!-- building cards -->
+        <div class="parent-box">
+            <div>
+                <div>
+                <div>
+                    <img src="https://www.kindmeal.my/photos/member/14/14287-s.jpg" alt="" srcset="">
+                    <div>
+                        <h5>Bvelyn</h5>
+                        <h6>29 sep 2022</h6>
+                    </div>
+                </div>
+                <button>view</button>
+            </div>
+            <div>
+                <img src="https://www.kindmeal.my/photos/moment/24/24416-47031-m.jpg" alt="">
+            </div>
+            <div>
+                <img src="https://www.kindmeal.my/images/icon_heart_darkgrey.svg" alt="" srcset="">
+                <p>0</p>
+                <img src="https://www.kindmeal.my/images/icon_camera_darkgrey.png" alt="">
+                <p>0</p>
+                <img src="https://www.kindmeal.my/images/icon_comment_darkgrey.png" alt="">
+                <p>0</p>
+            </div>
+            <div>
+                <p>淮山銀耳清潤湯（淮山，銀耳，玉米，紅蘿蔔，紅棗，海竹，姬松茸，百合，麥冬） 素瞎咪漢子葉 炸咖喱鮑魚菇 蒸紫米雜糧飯 今.. see more
+                </p>
+            </div>
+            </div>
+            <!-- 2nd -->
+            <div>
+                <div>
+                <div>
+                    <img src="https://www.kindmeal.my/photos/member/11/11812-s.jpg" alt="" srcset="">
+                    <div>
+                        <h5>Bvelyn</h5>
+                        <h6>29 sep 2022</h6>
+                    </div>
+                </div>
+                <button>view</button>
+            </div>
+            <div>
+                <img src="https://www.kindmeal.my/photos/moment/24/24439-47120-m.jpg" alt="">
+            </div>
+            <div>
+                <img src="https://www.kindmeal.my/images/icon_heart_darkgrey.svg" alt="" srcset="">
+                <p>0</p>
+                <img src="https://www.kindmeal.my/images/icon_camera_darkgrey.png" alt="">
+                <p>0</p>
+                <img src="https://www.kindmeal.my/images/icon_comment_darkgrey.png" alt="">
+                <p>0</p>
+            </div>
+            <div>
+                <p>淮山銀耳清潤湯（淮山，銀耳，玉米，紅蘿蔔，紅棗，海竹，姬松茸，百合，麥冬） 素瞎咪漢子葉 炸咖喱鮑魚菇 蒸紫米雜糧飯 今.. see more
+                </p>
+            </div>
+            </div>
+            <!-- 3rd -->
+            <div>
+                <div>
+                <div>
+                    <img src="https://www.kindmeal.my/photos/member/23/23028-s.jpg" alt="" srcset="">
+                    <div>
+                        <h5>Bvelyn</h5>
+                        <h6>29 sep 2022</h6>
+                    </div>
+                </div>
+                <button>view</button>
+            </div>
+            <div>
+                <img src="https://www.kindmeal.my/photos/moment/24/24451-47163-m.jpg" alt="">
+            </div>
+            <div>
+                <img src="https://www.kindmeal.my/images/icon_heart_darkgrey.svg" alt="" srcset="">
+                <p>0</p>
+                <img src="https://www.kindmeal.my/images/icon_camera_darkgrey.png" alt="">
+                <p>0</p>
+                <img src="https://www.kindmeal.my/images/icon_comment_darkgrey.png" alt="">
+                <p>0</p>
+            </div>
+            <div>
+                <p>淮山銀耳清潤湯（淮山，銀耳，玉米，紅蘿蔔，紅棗，海竹，姬松茸，百合，麥冬） 素瞎咪漢子葉 炸咖喱鮑魚菇 蒸紫米雜糧飯 今.. see more
+                </p>
+            </div>
+            </div>
+            <!-- 4th -->
+            <div>
+                <div>
+                <div>
+                    <img src="https://www.kindmeal.my/photos/member/11/11540-s.jpg" alt="" srcset="">
+                    <div>
+                        <h5>Bvelyn</h5>
+                        <h6>29 sep 2022</h6>
+                    </div>
+                </div>
+                <button>view</button>
+            </div>
+            <div>
+                <img src="https://www.kindmeal.my/photos/moment/24/24440-47124-m.jpg" alt="">
+            </div>
+            <div>
+                <img src="https://www.kindmeal.my/images/icon_heart_darkgrey.svg" alt="" srcset="">
+                <p>0</p>
+                <img src="https://www.kindmeal.my/images/icon_camera_darkgrey.png" alt="">
+                <p>0</p>
+                <img src="https://www.kindmeal.my/images/icon_comment_darkgrey.png" alt="">
+                <p>0</p>
+            </div>
+            <div>
+                <p>淮山銀耳清潤湯（淮山，銀耳，玉米，紅蘿蔔，紅棗，海竹，姬松茸，百合，麥冬） 素瞎咪漢子葉 炸咖喱鮑魚菇 蒸紫米雜糧飯 今.. see more
+                </p>
+            </div>
+            </div>
+            <!-- 5th -->
+            <div>
+                <div>
+                <div>
+                    <img src="https://www.kindmeal.my/photos/member/14/14287-s.jpg" alt="" srcset="">
+                    <div>
+                        <h5>Bvelyn</h5>
+                        <h6>29 sep 2022</h6>
+                    </div>
+                </div>
+                <button>view</button>
+            </div>
+            <div>
+                <img src="https://www.kindmeal.my/photos/moment/24/24446-47146-m.jpg" alt="">
+            </div>
+            <div>
+                <img src="https://www.kindmeal.my/images/icon_heart_darkgrey.svg" alt="" srcset="">
+                <p>0</p>
+                <img src="https://www.kindmeal.my/images/icon_camera_darkgrey.png" alt="">
+                <p>0</p>
+                <img src="https://www.kindmeal.my/images/icon_comment_darkgrey.png" alt="">
+                <p>0</p>
+            </div>
+            <div>
+                <p>淮山銀耳清潤湯（淮山，銀耳，玉米，紅蘿蔔，紅棗，海竹，姬松茸，百合，麥冬） 素瞎咪漢子葉 炸咖喱鮑魚菇 蒸紫米雜糧飯 今.. see more
+                </p>
+            </div>
+            </div>
+
+            <!-- 6th -->
+            <div>
+                <div>
+                <div>
+                    <img src="https://www.kindmeal.my/photos/member/31/31747-s.jpg" alt="" srcset="">
+                    <div>
+                        <h5>Bvelyn</h5>
+                        <h6>29 sep 2022</h6>
+                    </div>
+                </div>
+                <button>view</button>
+            </div>
+            <div>
+                <img src="https://www.kindmeal.my/photos/moment/24/24454-47170-m.jpg" alt="">
+            </div>
+            <div>
+                <img src="https://www.kindmeal.my/images/icon_heart_darkgrey.svg" alt="" srcset="">
+                <p>0</p>
+                <img src="https://www.kindmeal.my/images/icon_camera_darkgrey.png" alt="">
+                <p>0</p>
+                <img src="https://www.kindmeal.my/images/icon_comment_darkgrey.png" alt="">
+                <p>0</p>
+            </div>
+            <div>
+                <p>淮山銀耳清潤湯（淮山，銀耳，玉米，紅蘿蔔，紅棗，海竹，姬松茸，百合，麥冬） 素瞎咪漢子葉 炸咖喱鮑魚菇 蒸紫米雜糧飯 今.. see more
+                </p>
+            </div>
+            </div>
+
+            <!-- 7th -->
+            <div>
+                <div>
+                <div>
+                    <img src="https://www.kindmeal.my/photos/member/14/14169-s.jpg" alt="" srcset="">
+                    <div>
+                        <h5>Bvelyn</h5>
+                        <h6>29 sep 2022</h6>
+                    </div>
+                </div>
+                <button>view</button>
+            </div>
+            <div>
+                <img src="https://www.kindmeal.my/photos/moment/24/24433-47106-m.jpg" alt="">
+            </div>
+            <div>
+                <img src="https://www.kindmeal.my/images/icon_heart_darkgrey.svg" alt="" srcset="">
+                <p>0</p>
+                <img src="https://www.kindmeal.my/images/icon_camera_darkgrey.png" alt="">
+                <p>0</p>
+                <img src="https://www.kindmeal.my/images/icon_comment_darkgrey.png" alt="">
+                <p>0</p>
+            </div>
+            <div>
+                <p>淮山銀耳清潤湯（淮山，銀耳，玉米，紅蘿蔔，紅棗，海竹，姬松茸，百合，麥冬） 素瞎咪漢子葉 炸咖喱鮑魚菇 蒸紫米雜糧飯 今.. see more
+                </p>
+            </div>
+            </div>
+            <!-- 8th -->
+            <div>
+                <div>
+                <div>
+                    <img src="https://www.kindmeal.my/photos/member/24/24580-s.jpg" alt="" srcset="">
+                    <div>
+                        <h5>Bvelyn</h5>
+                        <h6>29 sep 2022</h6>
+                    </div>
+                </div>
+                <button>view</button>
+            </div>
+            <div>
+                <img src="https://www.kindmeal.my/photos/moment/24/24415-47026-m.jpg" alt="">
+            </div>
+            <div>
+                <img src="https://www.kindmeal.my/images/icon_heart_darkgrey.svg" alt="" srcset="">
+                <p>0</p>
+                <img src="https://www.kindmeal.my/images/icon_camera_darkgrey.png" alt="">
+                <p>0</p>
+                <img src="https://www.kindmeal.my/images/icon_comment_darkgrey.png" alt="">
+                <p>0</p>
+            </div>
+            <div>
+                <p>淮山銀耳清潤湯（淮山，銀耳，玉米，紅蘿蔔，紅棗，海竹，姬松茸，百合，麥冬） 素瞎咪漢子葉 炸咖喱鮑魚菇 蒸紫米雜糧飯 今.. see more
+                </p>
+            </div>
+            </div>
+
+            <!-- 9th -->
+            <div>
+                <div>
+                <div>
+                    <img src="https://www.kindmeal.my/photos/member/11/11540-s.jpg" alt="" srcset="">
+                    <div>
+                        <h5>Bvelyn</h5>
+                        <h6>29 sep 2022</h6>
+                    </div>
+                </div>
+                <button>view</button>
+            </div>
+            <div>
+                <img src="https://www.kindmeal.my/photos/moment/24/24424-47064-m.jpg" alt="">
+            </div>
+            <div>
+                <img src="https://www.kindmeal.my/images/icon_heart_darkgrey.svg" alt="" srcset="">
+                <p>0</p>
+                <img src="https://www.kindmeal.my/images/icon_camera_darkgrey.png" alt="">
+                <p>0</p>
+                <img src="https://www.kindmeal.my/images/icon_comment_darkgrey.png" alt="">
+                <p>0</p>
+            </div>
+            <div>
+                <p>淮山銀耳清潤湯（淮山，銀耳，玉米，紅蘿蔔，紅棗，海竹，姬松茸，百合，麥冬） 素瞎咪漢子葉 炸咖喱鮑魚菇 蒸紫米雜糧飯 今.. see more
+                </p>
+            </div>
+            </div>
+            <!-- 10th -->
+            <div>
+                <div>
+                <div>
+                    <img src="https://www.kindmeal.my/photos/member/25/25353-s.jpg" alt="" srcset="">
+                    <div>
+                        <h5>Bvelyn</h5>
+                        <h6>29 sep 2022</h6>
+                    </div>
+                </div>
+                <button>view</button>
+            </div>
+            <div>
+                <img src="https://www.kindmeal.my/photos/moment/24/24421-47051-m.jpg" alt="">
+            </div>
+            <div>
+                <img src="https://www.kindmeal.my/images/icon_heart_darkgrey.svg" alt="" srcset="">
+                <p>0</p>
+                <img src="https://www.kindmeal.my/images/icon_camera_darkgrey.png" alt="">
+                <p>0</p>
+                <img src="https://www.kindmeal.my/images/icon_comment_darkgrey.png" alt="">
+                <p>0</p>
+            </div>
+            <div>
+                <p>淮山銀耳清潤湯（淮山，銀耳，玉米，紅蘿蔔，紅棗，海竹，姬松茸，百合，麥冬） 素瞎咪漢子葉 炸咖喱鮑魚菇 蒸紫米雜糧飯 今.. see more
+                </p>
+            </div>
+            </div>
+            <!-- 10th -->
+            <div>
+                <div>
+                <div>
+                    <img src="https://www.kindmeal.my/photos/member/11/11542-s.jpg" alt="" srcset="">
+                    <div>
+                        <h5>Bvelyn</h5>
+                        <h6>29 sep 2022</h6>
+                    </div>
+                </div>
+                <button>view</button>
+            </div>
+            <div>
+                <img src="https://www.kindmeal.my/photos/moment/24/24430-47089-m.jpg" alt="">
+            </div>
+            <div>
+                <img src="https://www.kindmeal.my/images/icon_heart_darkgrey.svg" alt="" srcset="">
+                <p>0</p>
+                <img src="https://www.kindmeal.my/images/icon_camera_darkgrey.png" alt="">
+                <p>0</p>
+                <img src="https://www.kindmeal.my/images/icon_comment_darkgrey.png" alt="">
+                <p>0</p>
+            </div>
+            <div>
+                <p>淮山銀耳清潤湯（淮山，銀耳，玉米，紅蘿蔔，紅棗，海竹，姬松茸，百合，麥冬） 素瞎咪漢子葉 炸咖喱鮑魚菇 蒸紫米雜糧飯 今.. see more
+                </p>
+            </div>
+            </div>
+            <!-- 11th -->
+            <div>
+                <div>
+                <div>
+                    <img src="https://www.kindmeal.my/photos/member/35/35238-s.jpg" alt="" srcset="">
+                    <div>
+                        <h5>Bvelyn</h5>
+                        <h6>29 sep 2022</h6>
+                    </div>
+                </div>
+                <button>view</button>
+            </div>
+            <div>
+                <img src="https://www.kindmeal.my/photos/moment/24/24422-47056-m.jpg" alt="">
+            </div>
+            <div>
+                <img src="https://www.kindmeal.my/images/icon_heart_darkgrey.svg" alt="" srcset="">
+                <p>0</p>
+                <img src="https://www.kindmeal.my/images/icon_camera_darkgrey.png" alt="">
+                <p>0</p>
+                <img src="https://www.kindmeal.my/images/icon_comment_darkgrey.png" alt="">
+                <p>0</p>
+            </div>
+            <div>
+                <p>淮山銀耳清潤湯（淮山，銀耳，玉米，紅蘿蔔，紅棗，海竹，姬松茸，百合，麥冬） 素瞎咪漢子葉 炸咖喱鮑魚菇 蒸紫米雜糧飯 今.. see more
+                </p>
+            </div>
+            </div>
+        </div>
+<!-- pages -->
+<div class="pages2">
+    <div>
+        <div>Pages:</div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+    </div>
+    <button>next</button>
+</div>
+
+        <div class="footer">
+            <div class="inside-footer">
+                <div class="details">
+                    <div>
+                        <h4>General</h4>
+                        <p><a href="index.html">Home</a></p>
+                        <p><a href="#">Sign up</a></p>
+                        <p><a href="#">Businesses / Restaurateurs</a></p>
+                        <p><a href="#">Advertising</a></p>
+                        <p><a href="">About KindMeal.my</a></p>
+                        <p><a href="">Help & FAQ</a></p>
+                        <p><a href="">Terms & Conditions</a></p>
+                        <p><a href="">Inspiring Partners</a></p>
+                        <p><a href="">Lifestyle Ambassadors</a></p>
+                        <p><a href="">Jobs & Careers</a></p>
+                        <p><a href="">Contact Us</a></p>
+                    </div>
+                    <div>
+                        <h4>Features</h4>
+                        <p><a href="index.html">Meat-Free Deals</a></p>
+                        <p><a href="#">Tasty Menus</a></p>
+                        <p><a href="#">Kind Moments</a></p>
+                        <p><a href="#">Meat-Free Recipes</a></p>
+                        <p><a href="">Member Recommendations</a></p>
+                        <p><a href="">Featured Restaurants</a></p>
+                        <p><a href="">Vegetarian & Vegan Directory</a></p>
+                        <p><a href="">Food Map</a></p>
+                        <p><a href="">Become A Superhero</a></p>
+                        <p><a href="">Vegan News & Vegetarian Articles</a></p>
+                        <p><a href="">Latest Comments</a></p>
+                    </div>
+                    <div>
+                        <h4>Social media</h4>
+                        <p><a href="">KindMeal Widget</a></p>
+                        <p><a href="#">Facebook</a></p>
+                        <p><a href="#">Twitter</a></p>
+                        <p><a href="#">Instagram</a></p>
+                    </div>
+                    <div>
+                        <div>
+                        <h4>Mobile</h4>
+                        <p><a href="index.html">iPhone & iPod App</a></p>
+                        <p><a href="#">Android App</a></p>
+                    </div>
+                    <div>
+                        <h4>Exciting Promos</h4>
+                        <p><a href="index.html">Gadhimai: Ending Mass Slaughter</a></p>
+                        <p><a href="#">Free Meals</a></p>
+                        <p><a href="#">Food Bloggers</a></p>
+                        <p><a href="#">Uber CHIRP</a></p>
+                        <p><a href="">Jane Goodall Contest</a></p>
+                        <p><a href="">Win Digi iPhone 6</a></p>
+                        <p><a href="">Feed The Poor</a></p>
+                        <p><a href="">Win Superhero Gifts</a></p>
+                        <p><a href="">Win an iPad Mini 3</a></p>
+                    </div>
+                    </div>
+                    <div>
+                        <h4>PetFinder.my</h4>
+                        <p><a href="">Adopt A Pet</a></p>
+                        <p><a href="#">Smartphone Apps</a></p>
+                        <p><a href="#">WAGazine</a></p>
+                        <p><a href="#">Discussion Forum</a></p>
+                        <p><a href="#">Medical Fund</a></p>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>Copyright © KindMeal.my, 2014 - 2022. All rights reserved.</p>
+                    <p>This website promotes compassionate, meat-free dining experience. Some food may contain eggs, dairy products or alcohol, please view individual listings for details.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <script src="index.js"></script>
+      <script src="signup.js"></script>
+</body>
+</html>

@@ -19,7 +19,7 @@
     align-items: center;
     width: 20%;
 }
-.nav-1 > div:nth-child(2)>i{
+.nav-1 > div:nth-child(2)>a>i{
     font-size: 35px;
     cursor: pointer;
     opacity: 0.3;
@@ -31,11 +31,12 @@
     align-items: center;
     font-size: 15px;
 }
-.nav-1 > div:nth-child(3)>span:nth-child(1){
+.nav-1 > div:nth-child(3)>a:nth-child(1){
     cursor: pointer;
     padding: 5px;
+    text-decoration: none;
 }
-.nav-1 > div:nth-child(3)>span:nth-child(2){
+.nav-1 > div:nth-child(3)>a:nth-child(2){
     background-color: #35619F;
     padding: 5px;
     width: 90px;
@@ -43,8 +44,9 @@
     border-radius: 5px;
     text-align: center;
     cursor: pointer;
+    text-decoration: none;
 }
-.nav-1 > div:nth-child(3)>span:nth-child(3){
+.nav-1 > div:nth-child(3)>a:nth-child(3){
     background-color: #555555;
     padding: 5px;
     width: 70px;
@@ -52,11 +54,13 @@
     border-radius: 5px;
     text-align: center;
     cursor: pointer;
+    text-decoration: none;
 }
-.nav-1 > div:nth-child(3)>span:nth-child(4){
+.nav-1 > div:nth-child(3)>a:nth-child(4){
     border-left: 1px solid;
     padding: 5px;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .nav-2{
@@ -100,15 +104,52 @@
 }
 .slide-show> div:nth-child(1)>.slider{
     width: 100%;
+    background-color: #2BB673;
+    position: relative;
 }
-.slide-show> div:nth-child(1)>.slider>img{
+.slide-show> div:nth-child(1)>.slider>#images{
     width: 100%;
+    display: flex;
+}
+.slide-show> div:nth-child(1)>.slider>#images>#img1{
+    width: 60%;
+}
+.slide-show> div:nth-child(1)>.slider>#images>#img2{
+    width: 40%;
+}
+
+.slide-show> div:nth-child(1)>.slider>#disc{
+    background-color: white;
+    color: black;
+    width: 7%;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    padding: 15px;
+    opacity: 0.8;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+}
+.slide-show> div:nth-child(1)>.slider>#text{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 60%;
+    color: white;
+    bottom: 0px;
+    padding: 4px;
+    text-align: center;
 }
 .slide-show> div:nth-child(1)>.static{
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
 }
 .slide-show> div:nth-child(1)>.static>img{
-    width: 20%;
+    width: 15%;
 }
 
 /* building news and video section */
@@ -324,4 +365,199 @@ section>.info>div>img{
     font-size: 10px;
     color: white;
     opacity: 0.9;
+}
+
+/* modals */
+body{
+    position: relative;
+}
+
+#login-modal{
+    width: 40%;
+    position: absolute;
+    right: 400px;
+    background-color: white;
+    z-index: 100;
+    top: 200px;
+    text-align: center;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 450px;
+    border-radius: 10px;
+}
+#login-modal>i{
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    cursor: pointer;
+}
+#login-modal>#img{
+    width: 100px;
+}
+#login-modal>form{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 60%;
+    margin: auto;
+    gap: 14px;
+}
+#login-modal>form>input{
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid;
+}
+#login-modal>form>input:focus{
+    outline: none;
+}
+#login-modal>form>button{
+    padding: 10px;
+    width: 50%;
+    margin: auto;
+    border: none;
+    background-color: #2BB673;
+    font-size: 20px;
+    border-radius: 10px;
+    color: white;
+    margin-top: 10px;
+    cursor: pointer;
+}
+#login-modal>button{
+    font-size: 20px;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+    width: 50%;
+    border: none;
+    background-color: #35619F;
+    margin-top: 20px;
+    cursor: pointer;
+}
+#login-modal>button>i{
+    font-size:20px;
+    color: white;
+    margin-right: 4px;
+}
+#login-modal>div{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0px 20px;
+    margin-top: 30px;
+}
+
+.log-visible{
+    visibility: hidden;
+}
+.active{
+    visibility: visible;
+}
+
+/* building signup modal */
+
+#signup-modal{
+    width: 40%;
+    position: absolute;
+    right: 400px;
+    background-color: white;
+    z-index: 100;
+    top: 200px;
+    text-align: center;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+}
+#signup-modal>h2{
+    margin-top: 20px;
+}
+#signup-modal>p{
+    margin-top: 10px;
+}
+#signup-modal>div:nth-child(5){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid;
+    border-radius: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+#signup-modal>div:nth-child(5):hover{
+    background-color: #e6e6e6;
+}
+#signup-modal>div:nth-child(5)>img{
+    width: 150px;
+}
+#signup-modal>div:nth-child(6)>img{
+    width: 120px;
+}
+#signup-modal>div:nth-child(5)>div{
+    margin-left: 10px;
+    text-align: justify;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#signup-modal>div:nth-child(5)>div>p{
+    font-size: 14px;
+    text-align: justify;
+}
+#signup-modal>div:nth-child(6){
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#signup-modal>div:nth-child(6):hover{
+    background-color: #e6e6e6;
+}
+#signup-modal>div:nth-child(6)>div{
+    margin-left: 10px;
+    text-align: justify;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#signup-modal>div:nth-child(6)>div>p{
+    font-size: 14px;
+}
+
+#signup-modal>div:nth-child(7){
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+}
+#signup-modal>div:nth-child(7)>a{
+    font-size: 15px;
+    text-decoration: none;
+}
+
+#signup-modal>div:nth-child(7)>a:hover{
+    text-decoration: underline;
+}
+
+#signup-modal>i{
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    cursor: pointer;
+    padding: 3px;
+}
+
+#signup-modal>i:hover{
+    background-color: #e6e6e6;
 }
