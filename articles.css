@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Montserrat:wght@500&family=Poppins:wght@300;500;700&family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.header{
+    width: 100%;
+    background-color: #F0F0F0;
+    padding: 20px 0px;
+}
+
+.header>div{
+    width: 80%;
+    margin: auto;
+}
+.header>div h2{
+    font-weight: 100;
+}
+.header>div p{
+    font-size: 13px;
+}
+
+/*  */
+.pages{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 40px;
+}
+.pages2{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 20px;
+    padding-bottom: 30px;
+}
+
+.pages>div:nth-child(1){
+    display: flex;
+    gap: 5px;
+}
+
+.pages2>div:nth-child(1){
+    display: flex;
+    gap: 5px;
+}
+
+.pages>button{
+    padding: 5px 26px;
+    border: none;
+    border-radius: 4px;
+}
+.pages2>button{
+    padding: 5px 26px;
+    border: none;
+    border-radius: 4px;
+}
+
+/* building article cards */
+
+.container{
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 10px;
+}
+
+.container>div:nth-child(1){
+    width: fit-content;
+    height: 270px;
+}
+.container>div:nth-child(1)>img{
+    width: 500px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.container>div:nth-child(2){
+    width: 50%;
+    padding: 10px 40px 0px 0px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.container>div:nth-child(2) p{
+    font-size: 14px;
+}
+.container>div:nth-child(2)>div>h2{
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.container>div:nth-child(2)>div:nth-child(3){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container>div:nth-child(2)>div:nth-child(3)>button{
+    padding: 10px;
+    width: 30%;
+    border: none;
+    background-color: #F53838;
+    border-radius:5px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
