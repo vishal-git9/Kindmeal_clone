@@ -1,0 +1,156 @@
+.header{
+    width: 100%;
+    background-color: #F0F0F0;
+    padding: 20px 30px;
+}
+
+.header>div{
+    width: 80%;
+    margin: auto;
+}
+.header>div>p{
+    font-size: 14px;
+}
+
+/* button cards */
+
+.button-cards{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    width: 80%;
+    margin: auto;
+    gap: 10px;
+    margin-top: 20px;
+}
+.button-cards>button{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+.button-cards>button:nth-child(1){
+    background-color:#2BB673 ;
+    color: white;
+}
+
+/* building pasta fiesta */
+
+.pasta-fiesta{
+    width: 80%;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;    margin-top: 60px;
+    padding: 10px 30px;
+}
+.pasta-fiesta>div:nth-child(1){
+    margin-top: 30px;
+}
+.pasta-fiesta>div:nth-child(1)>div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.pasta-fiesta>div:nth-child(1)>div>div{
+    display: flex;
+    gap: 30px;
+}
+
+.pasta-fiesta>div:nth-child(2){
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    gap: 50px;
+    margin-top: 30px;
+}
+.pasta-fiesta>div:nth-child(2)>div{
+    position: relative;
+}
+.pasta-fiesta>div:nth-child(2)>div>img{
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+}
+.pasta-fiesta>div:nth-child(2)>div>h2{
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    background-color: red;
+    color: white;
+    padding: 10px 4px;
+    border-radius: 50%;
+    font-size: 18px;
+}
+
+.pasta-fiesta>div:nth-child(2)>div>h3{
+    position: absolute;
+    bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    text-align: center;
+    border-radius: 0px 0px 10px 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.pasta-fiesta>div:nth-child(2)>div>p{
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    
+}
+
+.padding{
+    margin-bottom: 60px;
+}
+
+.secondBox{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+.secondBox>div{
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    padding: 10px 0px;
+}
+.secondBox>div>div:nth-child(1){
+    width: 70%;
+}
+.secondBox>div>div:nth-child(1)>img{
+    width: 100%;
+    height:150px;
+    border-radius: 10px;
+}
+
+.secondBox>div>div:nth-child(2)>div{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.secondBox>div>div:nth-child(2)>div>img{
+    width: 40px;
+    border-radius: 50%;
+}
+.secondBox>div>div:nth-child(2)>div>h4{
+    font-size: 13px;
+    font-weight: 100;
+}
+
+.secondBox>div>div:nth-child(2)>p{
+    font-size: 13px;
+}
+.secondBox>div>div:nth-child(2)>a{
+    font-size: 13px;
+}
+
+.viewAll{
+    width: 100%;
+    margin-top: 40px;
+}
+.viewAll>button{
+    width: 100%;
+    padding: 10px 0px;
+}

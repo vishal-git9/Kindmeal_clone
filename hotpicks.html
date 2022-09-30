@@ -1,0 +1,1317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="hotpicks.css">
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div class="nav-1">
+        <div>
+          <img src="https://www.kindmeal.my/images/logo-kindmeal.png" alt="" width="100%"/>
+        </div>
+        <div>
+          <a href="https://twitter.com/KindMeal"><i class="fa-brands fa-twitter"></i></a>
+          <a href="https://www.facebook.com/KindMeal.my"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.kindmeal.my/widget.htm"><i class="fa-sharp fa-solid fa-link"></i></a>
+      </div>
+        <div>
+          <a href="">login</a>
+         <a href="https://www.facebook.com/login.php?skip_api_login=1&api_key=292733157519852&kid_directed_site=0&app_id=292733157519852&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fv2.9%2Fdialog%2Foauth%3Fclient_id%3D292733157519852%26redirect_uri%3Dhttps%253A%252F%252Fwww.kindmeal.my%252Flogin.php%253Faction%253Dfacebook%26state%3D4fc6fa69fc1715a896dce6105caf7bec%26display%3Dpopup%26scope%3Demail%252Cuser_birthday%252Cuser_location%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3D5bd4a5d9-6e63-4a1b-8ef9-af05b0807d39%26tp%3Dunspecified&cancel_url=https%3A%2F%2Fwww.kindmeal.my%2Flogin.php%3Faction%3Dfacebook%26error%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3D4fc6fa69fc1715a896dce6105caf7bec%23_%3D_&display=popup&locale=en_GB&pl_dbl=0"  id="face">Facebook</a>
+         <a href="#"  id="email">Email</a>
+         <a href="#"  id="signup">sign up</a>
+        </div>
+      </div>
+      <div class="nav-2">
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="mealdeal.html">Meal Deals</a></li>
+              <li><a href="kindmoment.html">Kind Moments</a></li>
+              <li><a href="hotpicks.html">Hot picks</a></li>
+              <li><a href="recipes.html">Recipes</a></li>
+              <li><a href="directory.html">Directory</a></li>
+              <li><a href="articles.html">Articles</a></li>
+              <li><a href="help.html">Help</a></li>
+          </ul>
+      </div>
+      <div id="login-modal" class="log-visible">
+              <i id="close" class="fa-solid fa-xmark"></i>
+              <img src="https://www.kindmeal.my/images/logo-kindmeal.png" alt="">
+              <h2>Member Login</h2>
+              <form id="get-login">
+                  <input type="email" id="email" placeholder="Your email">
+                  <input type="password" id="pass" placeholder="Your password">
+                  <button type="submit">Login</button>
+              </form>
+              <button><i class="fa-brands fa-facebook"></i>Login with Facebook</button>
+              <div>
+                  <a href=""> forgot password</a>
+              <a href="">not a member? sign up free</a></div>
+      </div>
+      <div id="signup-modal" class="log-visible">
+          <i id="signclose" class="fa-solid fa-xmark"></i>
+          <img src="https://www.kindmeal.my/images/logo-kindmeal.png" alt="">
+          <h2>Join KindMeal For FREE Now</h2>
+          <p>Please select the type of membership to proceed</p>
+          <div id="signup-html">
+              <img src="https://www.kindmeal.my/images/join_normal.png" alt="">
+              <div><h3>Food Lover</h3>
+              <p>
+                  Join FREE to enjoy yummy deals, share reviews & meet our community of compassionate food lovers.
+              </p></div>
+          </div>
+          <div>
+              <img src="https://www.kindmeal.my/images/join_shop.png" alt="">
+              <div>
+              <h3>Restaurant/shop Owner</h3>
+              <p>
+              List your food outlet, create exciting vegetarian deals & showcase your delicious menu for FREE. Enjoy our yummy deals, share reviews & meet food lovers too.
+              </p>
+          </div>
+          </div>
+          <div>
+             <a href="">member login</a>
+              <a href=""> forgot password?</a>
+          </div>
+      </div>
+      <!-- hotpicks started -->
+
+      <div class="header">
+        <div>
+            <h2>
+                All Categories   |   Hot Picks</h2><br>
+                <p>Discover our food lover community's top picks. Easily locate tasty meat-free bargain deals, and get creative ideas for your gastronomic indulgence!</p><br>
+                <p>Click into a featured deal to instantly obtain free coupons, or read more on our members' delicious recommendations.
+                </p>
+        </div>
+      </div>
+
+      <div class="button-cards">
+        <button>All Categories</button>
+        <button>pasta</button>
+        <button>Burger</button>
+        <button>Breakfast</button>
+        <button>Salad</button>
+        <button>Bakery</button>
+        <button>Tea & Dessert</button>
+        <button>Local Delights</button>
+        <button>Jap & Korean</button>
+        <button>Chinese</button>
+        <button>Indian</button>
+        <button>Soup</button>
+        <button>Cute</button>
+        <button>DIY</button>
+      </div>
+
+      <!-- pasta fiesta -->
+
+      <div class="pasta-fiesta">
+        <div>
+            <div>
+            <h2 style="font-weight:100;">
+                Pasta Fiesta
+            </h2>
+            <div>
+                <a href="" style="color: blue; font-size:20px; cursor:pointer;">View Pasta Deals</a>
+                <a href=""  style="color: blue; font-size:20px; cursor:pointer;">View All Pasta Hot Picks</a>
+            </div>
+        </div>
+        </div>
+        <div>
+            <div>
+                <img src="https://www.kindmeal.my/photos/deal/7/703-4854-m.jpg" alt="">
+                <h2>-10%</h2>
+                <h3>VietBeans Cafe</h3>
+                <p>Vietnamese Homecooked Meals</p>
+            </div>
+            <div>
+                <img src="https://www.kindmeal.my/photos/deal/5/574-3020-m.jpg" alt="">
+                <h2>-20%</h2>
+                <h3>Medal Mad Cafe
+                    </h3>
+                <p>Mad About Food</p>
+            </div>
+            <div>
+                <img src="https://www.kindmeal.my/photos/deal/6/621-3576-m.jpg" alt="">
+                <h2>-20%</h2>
+                <h3>Honest Bakery Cafe</h3>
+                <p>Honestly Superb Meals</p>
+            </div>
+            <div>
+                <img src="https://www.kindmeal.my/photos/deal/6/614-3355-m.jpg" alt="">
+                <h2>-10%</h2>
+                <h3>Elyn Vegetarian</h3>
+                <p>Memorable Vegetarian Delights</p>
+            </div>
+        </div>
+        <div class="secondBox">
+            <div>
+                <div class="img">
+                    <img src="https://www.kindmeal.my/photos/moment/16/16373-25137-m.jpg" alt="">
+                </div>
+                <div>
+                    <div><img src="https://www.kindmeal.my/images/default_female-m.jpg" alt="">
+                    <h4>melklm at Stars Picker Audio Cafe:</h4></div><br>
+                    <p>Wonderful ambience, friendly attentive service and absolutely delicious food! Will definitely be back :)</p><br>
+                    <a href="">Read Review »</a>
+                </div>
+            </div>
+            <div>
+                <div class="img">
+                    <img src="https://www.kindmeal.my/photos/moment/16/16360-25103-m.jpg" alt="">
+                </div>
+                <div>
+                    <div><img src="https://www.kindmeal.my/photos/member/33/33871-m.jpg" alt="">
+                    <h4>melklm at Stars Picker Audio Cafe:</h4></div><br>
+                    <p>Wonderful ambience, friendly attentive service and absolutely delicious food! Will definitely be back :)</p><br>
+                    <a href="">Read Review »</a>
+                </div>
+            </div>
+            <div>
+                <div class="img">
+                    <img src="https://www.kindmeal.my/photos/moment/16/16358-25101-m.jpg" alt="">
+                </div>
+                <div>
+                    <div><img src="https://www.kindmeal.my/photos/member/33/33871-m.jpg" alt="">
+                    <h4>melklm at Stars Picker Audio Cafe:</h4></div><br>
+                    <p>Wonderful ambience, friendly attentive service and absolutely delicious food! Will definitely be back :)</p><br>
+                    <a href="">Read Review »</a>
+                </div>
+            </div>
+            <div>
+                <div class="img">
+                    <img src="https://www.kindmeal.my/photos/moment/16/16352-25085-m.jpg" alt="">
+                </div>
+                <div>
+                    <div><img src="https://www.kindmeal.my/photos/member/30/30031-m.jpg" alt="">
+                    <h4>melklm at Stars Picker Audio Cafe:</h4></div><br>
+                    <p>Wonderful ambience, friendly attentive service and absolutely delicious food! Will definitely be back :)</p><br>
+                    <a href="">Read Review »</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="viewAll">
+            <button>View All Pasta Fiesta Hot Picks »</button>
+        </div>
+      </div>
+
+      <!-- burger bash -->
+      <div class="pasta-fiesta">
+        <div>
+            <div>
+            <h2 style="font-weight:100;">
+                Burger bash
+            </h2>
+            <div>
+                <a href="" style="color: blue; font-size:20px; cursor:pointer;">View Burger Deals</a>
+                <a href=""  style="color: blue; font-size:20px; cursor:pointer;">View All Burger Hot Picks</a>
+            </div>
+        </div>
+        </div>
+        <div>
+            <div>
+                <img src="https://www.kindmeal.my/photos/deal/6/696-5075-m.jpg" alt="">
+                <h2>-18%</h2>
+                <h3>VietBeans Cafe</h3>
+                <p>Vietnamese Homecooked Meals</p>
+            </div>
+            <div>
+                <img src="https://www.kindmeal.my/photos/deal/6/649-3919-m.jpg" alt="">
+                <h2>-10%</h2>
+                <h3>Medal Mad Cafe
+                    </h3>
+                <p>Mad About Food</p>
+            </div>
+            <div>
+                <img src="https://www.kindmeal.my/photos/deal/6/684-4446-m.jpg" alt="">
+                <h2>-15%</h2>
+                <h3>Honest Bakery Cafe</h3>
+                <p>Honestly Superb Meals</p>
+            </div>
+            <div>
+                <img src="https://www.kindmeal.my/photos/deal/7/706-4801-m.jpg" alt="">
+                <h2>-10%</h2>
+                <h3>Elyn Vegetarian</h3>
+                <p>Memorable Vegetarian Delights</p>
+            </div>
+        </div>
+        <div class="secondBox">
+            <div>
+                <div class="img">
+                    <img src="https://www.kindmeal.my/photos/moment/16/16344-25057-m.jpg" alt="">
+                </div>
+                <div>
+                    <div><img src="https://www.kindmeal.my/images/default_female-m.jpg" alt="">
+                    <h4>melklm at Stars Picker Audio Cafe:</h4></div><br>
+                    <p>Wonderful ambience, friendly attentive service and absolutely delicious food! Will definitely be back :)</p><br>
+                    <a href="">Read Review »</a>
+                </div>
+            </div>
+            <div>
+                <div class="img">
+                    <img src="https://www.kindmeal.my/photos/moment/16/16185-24666-m.jpg" alt="">
+                </div>
+                <div>
+                    <div><img src="https://www.kindmeal.my/photos/member/33/33341-m.jpg" alt="">
+                    <h4>melklm at Stars Picker Audio Cafe:</h4></div><br>
+                    <p>Wonderful ambience, friendly attentive service and absolutely delicious food! Will definitely be back :)</p><br>
+                    <a href="">Read Review »</a>
+                </div>
+            </div>
+            <div>
+                <div class="img">
+                    <img src="https://www.kindmeal.my/photos/moment/15/15210-22289-m.jpg" alt="">
+                </div>
+                <div>
+                    <div><img src="https://www.kindmeal.my/photos/member/28/28997-m.jpg" alt="">
+                    <h4>melklm at Stars Picker Audio Cafe:</h4></div><br>
+                    <p>Wonderful ambience, friendly attentive service and absolutely delicious food! Will definitely be back :)</p><br>
+                    <a href="">Read Review »</a>
+                </div>
+            </div>
+            <div>
+                <div class="img">
+                    <img src="https://www.kindmeal.my/photos/moment/15/15193-22252-m.jpg" alt="">
+                </div>
+                <div>
+                    <div><img src="https://www.kindmeal.my/photos/member/30/30213-m.jpg" alt="">
+                    <h4>melklm at Stars Picker Audio Cafe:</h4></div><br>
+                    <p>Wonderful ambience, friendly attentive service and absolutely delicious food! Will definitely be back :)</p><br>
+                    <a href="">Read Review »</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="viewAll">
+            <button>View All Pasta Fiesta Hot Picks »</button>
+        </div>
+      </div>
+      <!-- breakfast and brunch -->
+
+      <div class="pasta-fiesta">
+        <div>
+            <div>
+            <h2 style="font-weight:100;">
+                Breakfast and Brunch
+            </h2>
+            <div>
+                <a href="" style="color: blue; font-size:20px; cursor:pointer;">View Breakfast Deals</a>
+                <a href=""  style="color: blue; font-size:20px; cursor:pointer;">View Breakfast Hot Picks</a>
+            </div>
+        </div>
+        </div>
+        <div>
+            <div>
+                <img src="https://www.kindmeal.my/photos/deal/6/621-3576-m.jpg" alt="">
+                <h2>-10%</h2>
+                <h3>VietBeans Cafe</h3>
+                <p>Vietnamese Homecooked Meals</p>
+            </div>
+            <div>
+                <img src="https://www.kindmeal.my/photos/deal/3/369-3697-m.jpg" alt="">
+                <h2>-20%</h2>
+                <h3>Medal Mad Cafe
+                    </h3>
+                <p>Mad About Food</p>
+            </div>
+            <div>
+                <img src="https://www.kindmeal.my/photos/deal/5/551-2642-m.jpg" alt="">
+                <h2>-20%</h2>
+                <h3>Honest Bakery Cafe</h3>
+                <p>Honestly Superb Meals</p>
+            </div>
+            <div>
+                <img src="https://www.kindmeal.my/photos/deal/6/687-4507-m.jpg" alt="">
+                <h2>-10%</h2>
+                <h3>Elyn Vegetarian</h3>
+                <p>Memorable Vegetarian Delights</p>
+            </div>
+        </div>
+        <div class="secondBox">
+            <div>
+                <div class="img">
+                    <img src="https://www.kindmeal.my/photos/moment/18/18018-29221-m.jpg" alt="">
+                </div>
+                <div>
+                    <div><img src="https://www.kindmeal.my/images/default_female-m.jpg" alt="">
+                    <h4>melklm at Stars Picker Audio Cafe:</h4></div><br>
+                    <p>Wonderful ambience, friendly attentive service and absolutely delicious food! Will definitely be back :)</p><br>
+                    <a href="">Read Review »</a>
+                </div>
+            </div>
+            <div>
+                <div class="img">
+                    <img src="https://www.kindmeal.my/photos/moment/16/16313-24975-m.jpg" alt="">
+                </div>
+                <div>
+                    <div><img src="https://www.kindmeal.my/photos/member/32/32600-m.jpg" alt="">
+                    <h4>melklm at Stars Picker Audio Cafe:</h4></div><br>
+                    <p>Wonderful ambience, friendly attentive service and absolutely delicious food! Will definitely be back :)</p><br>
+                    <a href="">Read Review »</a>
+                </div>
+            </div>
+            <div>
+                <div class="img">
+                    <img src="https://www.kindmeal.my/photos/moment/16/16099-24499-m.jpg" alt="">
+                </div>
+                <div>
+                    <div><img src="https://www.kindmeal.my/photos/member/33/33595-m.jpg" alt="">
+                    <h4>melklm at Stars Picker Audio Cafe:</h4></div><br>
+                    <p>Wonderful ambience, friendly attentive service and absolutely delicious food! Will definitely be back :)</p><br>
+                    <a href="">Read Review »</a>
+                </div>
+            </div>
+            <div>
+                <div class="img">
+                    <img src="https://www.kindmeal.my/photos/moment/16/16094-24482-m.jpg" alt="">
+                </div>
+                <div>
+                    <div><img src="https://www.kindmeal.my/photos/member/20/20155-m.jpg" alt="">
+                    <h4>melklm at Stars Picker Audio Cafe:</h4></div><br>
+                    <p>Wonderful ambience, friendly attentive service and absolutely delicious food! Will definitely be back :)</p><br>
+                    <a href="">Read Review »</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="viewAll">
+            <button>View All Pasta Fiesta Hot Picks »</button>
+        </div>
+      </div>
+
+      <!-- Healthy salad -->
+
+      <div class="pasta-fiesta">
+        <div>
+            <div>
+            <h2 style="font-weight:100;">
+                Healthy salad
+            </h2>
+            <div>
+                <a href="" style="color: blue; font-size:20px; cursor:pointer;">View Salad Deals</a>
+                <a href=""  style="color: blue; font-size:20px; cursor:pointer;">View All Salad Hot Picks</a>
+            </div>
+        </div>
+        </div>
+        <div>
+            <div>
+                <img src="https://www.kindmeal.my/photos/deal/4/469-1822-m.jpg" alt="">
+                <h2>-10%</h2>
+                <h3>VietBeans Cafe</h3>
+                <p>Vietnamese Homecooked Meals</p>
+            </div>
+            <div>
+                <img src="https://www.kindmeal.my/photos/deal/7/717-5054-m.jpg" alt="">
+                <h2>-20%</h2>
+                <h3>Medal Mad Cafe
+                    </h3>
+                <p>Mad About Food</p>
+            </div>
+            <div>
+                <img src="https://www.kindmeal.my/photos/deal/2/271-519-m.jpg" alt="">
+                <h2>-20%</h2>
+                <h3>Honest Bakery Cafe</h3>
+                <p>Honestly Superb Meals</p>
+            </div>
+            <div>
+                <img src="https://www.kindmeal.my/photos/deal/6/698-4639-m.jpg" alt="">
+                <h2>-10%</h2>
+                <h3>Elyn Vegetarian</h3>
+                <p>Memorable Vegetarian Delights</p>
+            </div>
+        </div>
+        <div class="secondBox">
+            <div>
+                <div class="img">
+                    <img src="https://www.kindmeal.my/photos/moment/16/16314-24978-m.jpg" alt="">
+                </div>
+                <div>
+                    <div><img src="https://www.kindmeal.my/photos/member/10/10072-m.jpg" alt="">
+                    <h4>melklm at Stars Picker Audio Cafe:</h4></div><br>
+                    <p>Wonderful ambience, friendly attentive service and absolutely delicious food! Will definitely be back :)</p><br>
+                    <a href="">Read Review »</a>
+                </div>
+            </div>
+            <div>
+                <div class="img">
+                    <img src="https://www.kindmeal.my/photos/moment/16/16224-24752-m.jpg" alt="">
+                </div>
+                <div>
+                    <div><img src="https://www.kindmeal.my/photos/member/30/30530-m.jpg" alt="">
+                    <h4>melklm at Stars Picker Audio Cafe:</h4></div><br>
+                    <p>Wonderful ambience, friendly attentive service and absolutely delicious food! Will definitely be back :)</p><br>
+                    <a href="">Read Review »</a>
+                </div>
+            </div>
+            <div>
+                <div class="img">
+                    <img src="https://www.kindmeal.my/photos/deal/4/469-1822-s.jpg" alt="">
+                </div>
+                <div>
+                    <div><img src="https://www.kindmeal.my/images/default_female-m.jpg" alt="">
+                    <h4>melklm at Stars Picker Audio Cafe:</h4></div><br>
+                    <p>Wonderful ambience, friendly attentive service and absolutely delicious food! Will definitely be back :)</p><br>
+                    <a href="">Read Review »</a>
+                </div>
+            </div>
+            <div>
+                <div class="img">
+                    <img src="https://www.kindmeal.my/photos/moment/14/14891-21520-m.jpg" alt="">
+                </div>
+                <div>
+                    <div><img src="https://www.kindmeal.my/photos/member/20/20043-m.jpg" alt="">
+                    <h4>melklm at Stars Picker Audio Cafe:</h4></div><br>
+                    <p>Wonderful ambience, friendly attentive service and absolutely delicious food! Will definitely be back :)</p><br>
+                    <a href="">Read Review »</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="viewAll">
+            <button>View All Pasta Fiesta Hot Picks »</button>
+        </div>
+      </div>
+
+      <!-- pizza bread and bakery -->
+
+      <div class="pasta-fiesta">
+        <div>
+            <div>
+            <h2 style="font-weight:100;">
+                pizza bread and bakery
+            </h2>
+            <div>
+                <a href="" style="color: blue; font-size:20px; cursor:pointer;">View Pizza Deals</a>
+                <a href=""  style="color: blue; font-size:20px; cursor:pointer;">View All Pizza Hot Picks</a>
+            </div>
+        </div>
+        </div>
+        <div>
+            <div>
+                <img src="https://www.kindmeal.my/photos/deal/7/703-4854-m.jpg" alt="">
+                <h2>-10%</h2>
+                <h3>VietBeans Cafe</h3>
+                <p>Vietnamese Homecooked Meals</p>
+            </div>
+            <div>
+                <img src="https://www.kindmeal.my/photos/deal/5/574-3020-m.jpg" alt="">
+                <h2>-20%</h2>
+                <h3>Medal Mad Cafe
+                    </h3>
+                <p>Mad About Food</p>
+            </div>
+            <div>
+                <img src="https://www.kindmeal.my/photos/deal/6/621-3576-m.jpg" alt="">
+                <h2>-20%</h2>
+                <h3>Honest Bakery Cafe</h3>
+                <p>Honestly Superb Meals</p>
+            </div>
+            <div>
+                <img src="https://www.kindmeal.my/photos/deal/6/614-3355-m.jpg" alt="">
+                <h2>-10%</h2>
+                <h3>Elyn Vegetarian</h3>
+                <p>Memorable Vegetarian Delights</p>
+            </div>
+        </div>
+        <div class="secondBox">
+            <div>
+                <div class="img">
+                    <img src="https://www.kindmeal.my/photos/moment/16/16373-25137-m.jpg" alt="">
+                </div>
+                <div>
+                    <div><img src="https://www.kindmeal.my/images/default_female-m.jpg" alt="">
+                    <h4>melklm at Stars Picker Audio Cafe:</h4></div><br>
+                    <p>Wonderful ambience, friendly attentive service and absolutely delicious food! Will definitely be back :)</p><br>
+                    <a href="">Read Review »</a>
+                </div>
+            </div>
+            <div>
+                <div class="img">
+                    <img src="https://www.kindmeal.my/photos/moment/16/16360-25103-m.jpg" alt="">
+                </div>
+                <div>
+                    <div><img src="https://www.kindmeal.my/photos/member/33/33871-m.jpg" alt="">
+                    <h4>melklm at Stars Picker Audio Cafe:</h4></div><br>
+                    <p>Wonderful ambience, friendly attentive service and absolutely delicious food! Will definitely be back :)</p><br>
+                    <a href="">Read Review »</a>
+                </div>
+            </div>
+            <div>
+                <div class="img">
+                    <img src="https://www.kindmeal.my/photos/moment/16/16358-25101-m.jpg" alt="">
+                </div>
+                <div>
+                    <div><img src="https://www.kindmeal.my/photos/member/33/33871-m.jpg" alt="">
+                    <h4>melklm at Stars Picker Audio Cafe:</h4></div><br>
+                    <p>Wonderful ambience, friendly attentive service and absolutely delicious food! Will definitely be back :)</p><br>
+                    <a href="">Read Review »</a>
+                </div>
+            </div>
+            <div>
+                <div class="img">
+                    <img src="https://www.kindmeal.my/photos/moment/16/16352-25085-m.jpg" alt="">
+                </div>
+                <div>
+                    <div><img src="https://www.kindmeal.my/photos/member/30/30031-m.jpg" alt="">
+                    <h4>melklm at Stars Picker Audio Cafe:</h4></div><br>
+                    <p>Wonderful ambience, friendly attentive service and absolutely delicious food! Will definitely be back :)</p><br>
+                    <a href="">Read Review »</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="viewAll">
+            <button>View All Pasta Fiesta Hot Picks »</button>
+        </div>
+      </div>
+
+      <!-- High tea and desert -->
+
+      <div class="pasta-fiesta">
+        <div>
+            <div>
+            <h2 style="font-weight:100;">
+                Pasta Fiesta
+            </h2>
+            <div>
+                <a href="" style="color: blue; font-size:20px; cursor:pointer;">View Pasta Deals</a>
+                <a href=""  style="color: blue; font-size:20px; cursor:pointer;">View All Pasta Hot Picks</a>
+            </div>
+        </div>
+        </div>
+        <div>
+            <div>
+                <img src="https://www.kindmeal.my/photos/deal/7/703-4854-m.jpg" alt="">
+                <h2>-10%</h2>
+                <h3>VietBeans Cafe</h3>
+                <p>Vietnamese Homecooked Meals</p>
+            </div>
+            <div>
+                <img src="https://www.kindmeal.my/photos/deal/5/574-3020-m.jpg" alt="">
+                <h2>-20%</h2>
+                <h3>Medal Mad Cafe
+                    </h3>
+                <p>Mad About Food</p>
+            </div>
+            <div>
+                <img src="https://www.kindmeal.my/photos/deal/6/621-3576-m.jpg" alt="">
+                <h2>-20%</h2>
+                <h3>Honest Bakery Cafe</h3>
+                <p>Honestly Superb Meals</p>
+            </div>
+            <div>
+                <img src="https://www.kindmeal.my/photos/deal/6/614-3355-m.jpg" alt="">
+                <h2>-10%</h2>
+                <h3>Elyn Vegetarian</h3>
+                <p>Memorable Vegetarian Delights</p>
+            </div>
+        </div>
+        <div class="secondBox">
+            <div>
+                <div class="img">
+                    <img src="https://www.kindmeal.my/photos/moment/16/16373-25137-m.jpg" alt="">
+                </div>
+                <div>
+                    <div><img src="https://www.kindmeal.my/images/default_female-m.jpg" alt="">
+                    <h4>melklm at Stars Picker Audio Cafe:</h4></div><br>
+                    <p>Wonderful ambience, friendly attentive service and absolutely delicious food! Will definitely be back :)</p><br>
+                    <a href="">Read Review »</a>
+                </div>
+            </div>
+            <div>
+                <div class="img">
+                    <img src="https://www.kindmeal.my/photos/moment/16/16360-25103-m.jpg" alt="">
+                </div>
+                <div>
+                    <div><img src="https://www.kindmeal.my/photos/member/33/33871-m.jpg" alt="">
+                    <h4>melklm at Stars Picker Audio Cafe:</h4></div><br>
+                    <p>Wonderful ambience, friendly attentive service and absolutely delicious food! Will definitely be back :)</p><br>
+                    <a href="">Read Review »</a>
+                </div>
+            </div>
+            <div>
+                <div class="img">
+                    <img src="https://www.kindmeal.my/photos/moment/16/16358-25101-m.jpg" alt="">
+                </div>
+                <div>
+                    <div><img src="https://www.kindmeal.my/photos/member/33/33871-m.jpg" alt="">
+                    <h4>melklm at Stars Picker Audio Cafe:</h4></div><br>
+                    <p>Wonderful ambience, friendly attentive service and absolutely delicious food! Will definitely be back :)</p><br>
+                    <a href="">Read Review »</a>
+                </div>
+            </div>
+            <div>
+                <div class="img">
+                    <img src="https://www.kindmeal.my/photos/moment/16/16352-25085-m.jpg" alt="">
+                </div>
+                <div>
+                    <div><img src="https://www.kindmeal.my/photos/member/30/30031-m.jpg" alt="">
+                    <h4>melklm at Stars Picker Audio Cafe:</h4></div><br>
+                    <p>Wonderful ambience, friendly attentive service and absolutely delicious food! Will definitely be back :)</p><br>
+                    <a href="">Read Review »</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="viewAll">
+            <button>View All Pasta Fiesta Hot Picks »</button>
+        </div>
+      </div>
+
+      <!-- local delights -->
+
+      <div class="pasta-fiesta">
+        <div>
+            <div>
+            <h2 style="font-weight:100;">
+                Pasta Fiesta
+            </h2>
+            <div>
+                <a href="" style="color: blue; font-size:20px; cursor:pointer;">View Pasta Deals</a>
+                <a href=""  style="color: blue; font-size:20px; cursor:pointer;">View All Pasta Hot Picks</a>
+            </div>
+        </div>
+        </div>
+        <div>
+            <div>
+                <img src="https://www.kindmeal.my/photos/deal/7/703-4854-m.jpg" alt="">
+                <h2>-10%</h2>
+                <h3>VietBeans Cafe</h3>
+                <p>Vietnamese Homecooked Meals</p>
+            </div>
+            <div>
+                <img src="https://www.kindmeal.my/photos/deal/5/574-3020-m.jpg" alt="">
+                <h2>-20%</h2>
+                <h3>Medal Mad Cafe
+                    </h3>
+                <p>Mad About Food</p>
+            </div>
+            <div>
+                <img src="https://www.kindmeal.my/photos/deal/6/621-3576-m.jpg" alt="">
+                <h2>-20%</h2>
+                <h3>Honest Bakery Cafe</h3>
+                <p>Honestly Superb Meals</p>
+            </div>
+            <div>
+                <img src="https://www.kindmeal.my/photos/deal/6/614-3355-m.jpg" alt="">
+                <h2>-10%</h2>
+                <h3>Elyn Vegetarian</h3>
+                <p>Memorable Vegetarian Delights</p>
+            </div>
+        </div>
+        <div class="secondBox">
+            <div>
+                <div class="img">
+                    <img src="https://www.kindmeal.my/photos/moment/16/16373-25137-m.jpg" alt="">
+                </div>
+                <div>
+                    <div><img src="https://www.kindmeal.my/images/default_female-m.jpg" alt="">
+                    <h4>melklm at Stars Picker Audio Cafe:</h4></div><br>
+                    <p>Wonderful ambience, friendly attentive service and absolutely delicious food! Will definitely be back :)</p><br>
+                    <a href="">Read Review »</a>
+                </div>
+            </div>
+            <div>
+                <div class="img">
+                    <img src="https://www.kindmeal.my/photos/moment/16/16360-25103-m.jpg" alt="">
+                </div>
+                <div>
+                    <div><img src="https://www.kindmeal.my/photos/member/33/33871-m.jpg" alt="">
+                    <h4>melklm at Stars Picker Audio Cafe:</h4></div><br>
+                    <p>Wonderful ambience, friendly attentive service and absolutely delicious food! Will definitely be back :)</p><br>
+                    <a href="">Read Review »</a>
+                </div>
+            </div>
+            <div>
+                <div class="img">
+                    <img src="https://www.kindmeal.my/photos/moment/16/16358-25101-m.jpg" alt="">
+                </div>
+                <div>
+                    <div><img src="https://www.kindmeal.my/photos/member/33/33871-m.jpg" alt="">
+                    <h4>melklm at Stars Picker Audio Cafe:</h4></div><br>
+                    <p>Wonderful ambience, friendly attentive service and absolutely delicious food! Will definitely be back :)</p><br>
+                    <a href="">Read Review »</a>
+                </div>
+            </div>
+            <div>
+                <div class="img">
+                    <img src="https://www.kindmeal.my/photos/moment/16/16352-25085-m.jpg" alt="">
+                </div>
+                <div>
+                    <div><img src="https://www.kindmeal.my/photos/member/30/30031-m.jpg" alt="">
+                    <h4>melklm at Stars Picker Audio Cafe:</h4></div><br>
+                    <p>Wonderful ambience, friendly attentive service and absolutely delicious food! Will definitely be back :)</p><br>
+                    <a href="">Read Review »</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="viewAll">
+            <button>View All Pasta Fiesta Hot Picks »</button>
+        </div>
+      </div>
+
+      <!-- japanese and korean -->
+
+      <div class="pasta-fiesta">
+        <div>
+            <div>
+            <h2 style="font-weight:100;">
+                Pasta Fiesta
+            </h2>
+            <div>
+                <a href="" style="color: blue; font-size:20px; cursor:pointer;">View Pasta Deals</a>
+                <a href=""  style="color: blue; font-size:20px; cursor:pointer;">View All Pasta Hot Picks</a>
+            </div>
+        </div>
+        </div>
+        <div>
+            <div>
+                <img src="https://www.kindmeal.my/photos/deal/7/703-4854-m.jpg" alt="">
+                <h2>-10%</h2>
+                <h3>VietBeans Cafe</h3>
+                <p>Vietnamese Homecooked Meals</p>
+            </div>
+            <div>
+                <img src="https://www.kindmeal.my/photos/deal/5/574-3020-m.jpg" alt="">
+                <h2>-20%</h2>
+                <h3>Medal Mad Cafe
+                    </h3>
+                <p>Mad About Food</p>
+            </div>
+            <div>
+                <img src="https://www.kindmeal.my/photos/deal/6/621-3576-m.jpg" alt="">
+                <h2>-20%</h2>
+                <h3>Honest Bakery Cafe</h3>
+                <p>Honestly Superb Meals</p>
+            </div>
+            <div>
+                <img src="https://www.kindmeal.my/photos/deal/6/614-3355-m.jpg" alt="">
+                <h2>-10%</h2>
+                <h3>Elyn Vegetarian</h3>
+                <p>Memorable Vegetarian Delights</p>
+            </div>
+        </div>
+        <div class="secondBox">
+            <div>
+                <div class="img">
+                    <img src="https://www.kindmeal.my/photos/moment/16/16373-25137-m.jpg" alt="">
+                </div>
+                <div>
+                    <div><img src="https://www.kindmeal.my/images/default_female-m.jpg" alt="">
+                    <h4>melklm at Stars Picker Audio Cafe:</h4></div><br>
+                    <p>Wonderful ambience, friendly attentive service and absolutely delicious food! Will definitely be back :)</p><br>
+                    <a href="">Read Review »</a>
+                </div>
+            </div>
+            <div>
+                <div class="img">
+                    <img src="https://www.kindmeal.my/photos/moment/16/16360-25103-m.jpg" alt="">
+                </div>
+                <div>
+                    <div><img src="https://www.kindmeal.my/photos/member/33/33871-m.jpg" alt="">
+                    <h4>melklm at Stars Picker Audio Cafe:</h4></div><br>
+                    <p>Wonderful ambience, friendly attentive service and absolutely delicious food! Will definitely be back :)</p><br>
+                    <a href="">Read Review »</a>
+                </div>
+            </div>
+            <div>
+                <div class="img">
+                    <img src="https://www.kindmeal.my/photos/moment/16/16358-25101-m.jpg" alt="">
+                </div>
+                <div>
+                    <div><img src="https://www.kindmeal.my/photos/member/33/33871-m.jpg" alt="">
+                    <h4>melklm at Stars Picker Audio Cafe:</h4></div><br>
+                    <p>Wonderful ambience, friendly attentive service and absolutely delicious food! Will definitely be back :)</p><br>
+                    <a href="">Read Review »</a>
+                </div>
+            </div>
+            <div>
+                <div class="img">
+                    <img src="https://www.kindmeal.my/photos/moment/16/16352-25085-m.jpg" alt="">
+                </div>
+                <div>
+                    <div><img src="https://www.kindmeal.my/photos/member/30/30031-m.jpg" alt="">
+                    <h4>melklm at Stars Picker Audio Cafe:</h4></div><br>
+                    <p>Wonderful ambience, friendly attentive service and absolutely delicious food! Will definitely be back :)</p><br>
+                    <a href="">Read Review »</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="viewAll">
+            <button>View All Pasta Fiesta Hot Picks »</button>
+        </div>
+      </div>
+
+      <!-- chinese vegetarian -->
+      <div class="pasta-fiesta">
+        <div>
+            <div>
+            <h2 style="font-weight:100;">
+                Pasta Fiesta
+            </h2>
+            <div>
+                <a href="" style="color: blue; font-size:20px; cursor:pointer;">View Pasta Deals</a>
+                <a href=""  style="color: blue; font-size:20px; cursor:pointer;">View All Pasta Hot Picks</a>
+            </div>
+        </div>
+        </div>
+        <div>
+            <div>
+                <img src="https://www.kindmeal.my/photos/deal/7/703-4854-m.jpg" alt="">
+                <h2>-10%</h2>
+                <h3>VietBeans Cafe</h3>
+                <p>Vietnamese Homecooked Meals</p>
+            </div>
+            <div>
+                <img src="https://www.kindmeal.my/photos/deal/5/574-3020-m.jpg" alt="">
+                <h2>-20%</h2>
+                <h3>Medal Mad Cafe
+                    </h3>
+                <p>Mad About Food</p>
+            </div>
+            <div>
+                <img src="https://www.kindmeal.my/photos/deal/6/621-3576-m.jpg" alt="">
+                <h2>-20%</h2>
+                <h3>Honest Bakery Cafe</h3>
+                <p>Honestly Superb Meals</p>
+            </div>
+            <div>
+                <img src="https://www.kindmeal.my/photos/deal/6/614-3355-m.jpg" alt="">
+                <h2>-10%</h2>
+                <h3>Elyn Vegetarian</h3>
+                <p>Memorable Vegetarian Delights</p>
+            </div>
+        </div>
+        <div class="secondBox">
+            <div>
+                <div class="img">
+                    <img src="https://www.kindmeal.my/photos/moment/16/16373-25137-m.jpg" alt="">
+                </div>
+                <div>
+                    <div><img src="https://www.kindmeal.my/images/default_female-m.jpg" alt="">
+                    <h4>melklm at Stars Picker Audio Cafe:</h4></div><br>
+                    <p>Wonderful ambience, friendly attentive service and absolutely delicious food! Will definitely be back :)</p><br>
+                    <a href="">Read Review »</a>
+                </div>
+            </div>
+            <div>
+                <div class="img">
+                    <img src="https://www.kindmeal.my/photos/moment/16/16360-25103-m.jpg" alt="">
+                </div>
+                <div>
+                    <div><img src="https://www.kindmeal.my/photos/member/33/33871-m.jpg" alt="">
+                    <h4>melklm at Stars Picker Audio Cafe:</h4></div><br>
+                    <p>Wonderful ambience, friendly attentive service and absolutely delicious food! Will definitely be back :)</p><br>
+                    <a href="">Read Review »</a>
+                </div>
+            </div>
+            <div>
+                <div class="img">
+                    <img src="https://www.kindmeal.my/photos/moment/16/16358-25101-m.jpg" alt="">
+                </div>
+                <div>
+                    <div><img src="https://www.kindmeal.my/photos/member/33/33871-m.jpg" alt="">
+                    <h4>melklm at Stars Picker Audio Cafe:</h4></div><br>
+                    <p>Wonderful ambience, friendly attentive service and absolutely delicious food! Will definitely be back :)</p><br>
+                    <a href="">Read Review »</a>
+                </div>
+            </div>
+            <div>
+                <div class="img">
+                    <img src="https://www.kindmeal.my/photos/moment/16/16352-25085-m.jpg" alt="">
+                </div>
+                <div>
+                    <div><img src="https://www.kindmeal.my/photos/member/30/30031-m.jpg" alt="">
+                    <h4>melklm at Stars Picker Audio Cafe:</h4></div><br>
+                    <p>Wonderful ambience, friendly attentive service and absolutely delicious food! Will definitely be back :)</p><br>
+                    <a href="">Read Review »</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="viewAll">
+            <button>View All Pasta Fiesta Hot Picks »</button>
+        </div>
+      </div>
+
+      <!-- spicy indian cuisine -->
+      <div class="pasta-fiesta">
+        <div>
+            <div>
+            <h2 style="font-weight:100;">
+                Spicy Indian Cuisine
+            </h2>
+            <div>
+                <a href="" style="color: blue; font-size:20px; cursor:pointer;">View Indian Deals</a>
+                <a href=""  style="color: blue; font-size:20px; cursor:pointer;">View All Indian Hot Picks</a>
+            </div>
+        </div>
+        </div>
+        <div>
+            <div>
+                <img src="https://www.kindmeal.my/photos/deal/6/605-3316-m.jpg" alt="">
+                <h2>-10%</h2>
+                <h3>VietBeans Cafe</h3>
+                <p>Vietnamese Homecooked Meals</p>
+            </div>
+            <div>
+                <img src="https://www.kindmeal.my/photos/deal/6/626-3611-m.jpg" alt="">
+                <h2>-20%</h2>
+                <h3>Medal Mad Cafe
+                    </h3>
+                <p>Mad About Food</p>
+            </div>
+        </div>
+        <div class="secondBox">
+            <div>
+                <div class="img">
+                    <img src="https://www.kindmeal.my/photos/moment/17/17980-29126-m.jpg" alt="">
+                </div>
+                <div>
+                    <div><img src="https://www.kindmeal.my/photos/member/19/19456-m.jpg" alt="">
+                    <h4>melklm at Stars Picker Audio Cafe:</h4></div><br>
+                    <p>Wonderful ambience, friendly attentive service and absolutely delicious food! Will definitely be back :)</p><br>
+                    <a href="">Read Review »</a>
+                </div>
+            </div>
+            <div>
+                <div class="img">
+                    <img src="https://www.kindmeal.my/photos/moment/16/16225-24753-m.jpg" alt="">
+                </div>
+                <div>
+                    <div><img src="https://www.kindmeal.my/photos/member/23/23028-m.jpg" alt="">
+                    <h4>melklm at Stars Picker Audio Cafe:</h4></div><br>
+                    <p>Wonderful ambience, friendly attentive service and absolutely delicious food! Will definitely be back :)</p><br>
+                    <a href="">Read Review »</a>
+                </div>
+            </div>
+            <div>
+                <div class="img">
+                    <img src="https://www.kindmeal.my/photos/moment/16/16176-24643-m.jpg" alt="">
+                </div>
+                <div>
+                    <div><img src="https://www.kindmeal.my/photos/member/11/11411-m.jpg" alt="">
+                    <h4>melklm at Stars Picker Audio Cafe:</h4></div><br>
+                    <p>Wonderful ambience, friendly attentive service and absolutely delicious food! Will definitely be back :)</p><br>
+                    <a href="">Read Review »</a>
+                </div>
+            </div>
+            <div>
+                <div class="img">
+                    <img src="https://www.kindmeal.my/photos/moment/16/16171-24630-m.jpg" alt="">
+                </div>
+                <div>
+                    <div><img src="https://www.kindmeal.my/photos/member/10/10072-m.jpg" alt="">
+                    <h4>melklm at Stars Picker Audio Cafe:</h4></div><br>
+                    <p>Wonderful ambience, friendly attentive service and absolutely delicious food! Will definitely be back :)</p><br>
+                    <a href="">Read Review »</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="viewAll">
+            <button>View All 
+                Spicy Indian Cuisine »</button>
+        </div>
+      </div>
+
+      <!-- creamy soup -->
+      <div class="pasta-fiesta">
+        <div>
+            <div>
+            <h2 style="font-weight:100;">
+                Creamy soup
+            </h2>
+            <div>
+                <a href="" style="color: blue; font-size:20px; cursor:pointer;">View Creamy soup Deals</a>
+                <a href=""  style="color: blue; font-size:20px; cursor:pointer;">View All Creamy soup Hot Picks</a>
+            </div>
+        </div>
+        </div>
+        <div>
+            <div>
+                <img src="https://www.kindmeal.my/photos/deal/7/718-5090-m.jpg" alt="">
+                <h2>-10%</h2>
+                <h3>VietBeans Cafe</h3>
+                <p>Vietnamese Homecooked Meals</p>
+            </div>
+        </div>
+        <div class="secondBox">
+            <div>
+                <div class="img">
+                    <img src="https://www.kindmeal.my/photos/moment/14/14326-20300-m.jpg" alt="">
+                </div>
+                <div>
+                    <div><img src="https://www.kindmeal.my/photos/member/10/10466-m.jpg" alt="">
+                    <h4>melklm at Stars Picker Audio Cafe:</h4></div><br>
+                    <p>Wonderful ambience, friendly attentive service and absolutely delicious food! Will definitely be back :)</p><br>
+                    <a href="">Read Review »</a>
+                </div>
+            </div>
+            <div>
+                <div class="img">
+                    <img src="https://www.kindmeal.my/photos/moment/14/14119-19790-m.jpg" alt="">
+                </div>
+                <div>
+                    <div><img src="https://www.kindmeal.my/photos/member/10/10479-m.jpg" alt="">
+                    <h4>melklm at Stars Picker Audio Cafe:</h4></div><br>
+                    <p>Wonderful ambience, friendly attentive service and absolutely delicious food! Will definitely be back :)</p><br>
+                    <a href="">Read Review »</a>
+                </div>
+            </div>
+            <div>
+                <div class="img">
+                    <img src="https://www.kindmeal.my/photos/moment/16/16358-25101-m.jpg" alt="">
+                </div>
+                <div>
+                    <div><img src="https://www.kindmeal.my/photos/member/33/33871-m.jpg" alt="">
+                    <h4>melklm at Stars Picker Audio Cafe:</h4></div><br>
+                    <p>Wonderful ambience, friendly attentive service and absolutely delicious food! Will definitely be back :)</p><br>
+                    <a href="">Read Review »</a>
+                </div>
+            </div>
+            <div>
+                <div class="img">
+                    <img src="https://www.kindmeal.my/photos/moment/11/11773-14422-m.jpg" alt="">
+                </div>
+                <div>
+                    <div><img src="https://www.kindmeal.my/photos/member/11/11741-m.jpg" alt="">
+                    <h4>melklm at Stars Picker Audio Cafe:</h4></div><br>
+                    <p>Wonderful ambience, friendly attentive service and absolutely delicious food! Will definitely be back :)</p><br>
+                    <a href="">Read Review »</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="viewAll">
+            <button>View All Creamy soup Hot Picks »</button>
+        </div>
+      </div>
+
+      <!-- cutness overload -->
+
+      <div class="pasta-fiesta">
+        <div>
+            <div>
+            <h2 style="font-weight:100;">
+                Cutness overload
+            </h2>
+            <div>
+                <a href="" style="color: blue; font-size:20px; cursor:pointer;">View Cutness Deals</a>
+                <a href=""  style="color: blue; font-size:20px; cursor:pointer;">View All Cutness Hot Picks</a>
+            </div>
+        </div>
+        </div>
+        <div>
+        </div>
+        <div class="secondBox">
+            <div>
+                <div class="img">
+                    <img src="https://www.kindmeal.my/photos/moment/16/16373-25137-m.jpg" alt="">
+                </div>
+                <div>
+                    <div><img src="https://www.kindmeal.my/images/default_female-m.jpg" alt="">
+                    <h4>melklm at Stars Picker Audio Cafe:</h4></div><br>
+                    <p>Wonderful ambience, friendly attentive service and absolutely delicious food! Will definitely be back :)</p><br>
+                    <a href="">Read Review »</a>
+                </div>
+            </div>
+            <div>
+                <div class="img">
+                    <img src="https://www.kindmeal.my/photos/moment/16/16360-25103-m.jpg" alt="">
+                </div>
+                <div>
+                    <div><img src="https://www.kindmeal.my/photos/member/33/33871-m.jpg" alt="">
+                    <h4>melklm at Stars Picker Audio Cafe:</h4></div><br>
+                    <p>Wonderful ambience, friendly attentive service and absolutely delicious food! Will definitely be back :)</p><br>
+                    <a href="">Read Review »</a>
+                </div>
+            </div>
+            <div>
+                <div class="img">
+                    <img src="https://www.kindmeal.my/photos/moment/16/16358-25101-m.jpg" alt="">
+                </div>
+                <div>
+                    <div><img src="https://www.kindmeal.my/photos/member/33/33871-m.jpg" alt="">
+                    <h4>melklm at Stars Picker Audio Cafe:</h4></div><br>
+                    <p>Wonderful ambience, friendly attentive service and absolutely delicious food! Will definitely be back :)</p><br>
+                    <a href="">Read Review »</a>
+                </div>
+            </div>
+            <div>
+                <div class="img">
+                    <img src="https://www.kindmeal.my/photos/moment/16/16352-25085-m.jpg" alt="">
+                </div>
+                <div>
+                    <div><img src="https://www.kindmeal.my/photos/member/30/30031-m.jpg" alt="">
+                    <h4>melklm at Stars Picker Audio Cafe:</h4></div><br>
+                    <p>Wonderful ambience, friendly attentive service and absolutely delicious food! Will definitely be back :)</p><br>
+                    <a href="">Read Review »</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="viewAll">
+            <button>View All Pasta Fiesta Hot Picks »</button>
+        </div>
+      </div>
+
+      <!-- DIY Masterpiece -->
+      <div class="pasta-fiesta padding">
+        <div>
+            <div>
+            <h2 style="font-weight:100;">
+                DIY Masterpieces
+            </h2>
+            <div>
+                <a href="" style="color: blue; font-size:20px; cursor:pointer;">View DIY Deals</a>
+                <a href=""  style="color: blue; font-size:20px; cursor:pointer;">View All DIY Hot Picks</a>
+            </div>
+        </div>
+        </div>
+        <div>
+        </div>
+        <div class="secondBox">
+            <div>
+                <div class="img">
+                    <img src="https://www.kindmeal.my/photos/moment/18/18034-29261-m.jpg" alt="">
+                </div>
+                <div>
+                    <div><img src="https://www.kindmeal.my/photos/member/14/14287-m.jpg" alt="">
+                    <h4>melklm at Stars Picker Audio Cafe:</h4></div><br>
+                    <p>Wonderful ambience, friendly attentive service and absolutely delicious food! Will definitely be back :)</p><br>
+                    <a href="">Read Review »</a>
+                </div>
+            </div>
+            <div>
+                <div class="img">
+                    <img src="https://www.kindmeal.my/photos/moment/18/18033-29260-m.jpg" alt="">
+                </div>
+                <div>
+                    <div><img src="https://www.kindmeal.my/photos/member/23/23028-m.jpg" alt="">
+                    <h4>melklm at Stars Picker Audio Cafe:</h4></div><br>
+                    <p>Wonderful ambience, friendly attentive service and absolutely delicious food! Will definitely be back :)</p><br>
+                    <a href="">Read Review »</a>
+                </div>
+            </div>
+            <div>
+                <div class="img">
+                    <img src="https://www.kindmeal.my/photos/moment/17/17986-29135-m.jpg" alt="">
+                </div>
+                <div>
+                    <div><img src="https://www.kindmeal.my/photos/member/14/14287-m.jpg" alt="">
+                    <h4>melklm at Stars Picker Audio Cafe:</h4></div><br>
+                    <p>Wonderful ambience, friendly attentive service and absolutely delicious food! Will definitely be back :)</p><br>
+                    <a href="">Read Review »</a>
+                </div>
+            </div>
+            <div>
+                <div class="img">
+                    <img src="https://www.kindmeal.my/photos/moment/17/17984-29133-m.jpg" alt="">
+                </div>
+                <div>
+                    <div><img src="https://www.kindmeal.my/photos/member/11/11812-m.jpg" alt="">
+                    <h4>melklm at Stars Picker Audio Cafe:</h4></div><br>
+                    <p>Wonderful ambience, friendly attentive service and absolutely delicious food! Will definitely be back :)</p><br>
+                    <a href="">Read Review »</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="viewAll">
+            <button>View All DIY Masterpiece Hot Picks »</button>
+        </div>
+      </div>
+
+      <!-- footer -->
+
+      <div class="footer">
+        <div class="inside-footer">
+            <div class="details">
+                <div>
+                    <h4>General</h4>
+                    <p><a href="index.html">Home</a></p>
+                    <p><a href="#">Sign up</a></p>
+                    <p><a href="#">Businesses / Restaurateurs</a></p>
+                    <p><a href="#">Advertising</a></p>
+                    <p><a href="">About KindMeal.my</a></p>
+                    <p><a href="">Help & FAQ</a></p>
+                    <p><a href="">Terms & Conditions</a></p>
+                    <p><a href="">Inspiring Partners</a></p>
+                    <p><a href="">Lifestyle Ambassadors</a></p>
+                    <p><a href="">Jobs & Careers</a></p>
+                    <p><a href="">Contact Us</a></p>
+                </div>
+                <div>
+                    <h4>Features</h4>
+                    <p><a href="index.html">Meat-Free Deals</a></p>
+                    <p><a href="#">Tasty Menus</a></p>
+                    <p><a href="#">Kind Moments</a></p>
+                    <p><a href="#">Meat-Free Recipes</a></p>
+                    <p><a href="">Member Recommendations</a></p>
+                    <p><a href="">Featured Restaurants</a></p>
+                    <p><a href="">Vegetarian & Vegan Directory</a></p>
+                    <p><a href="">Food Map</a></p>
+                    <p><a href="">Become A Superhero</a></p>
+                    <p><a href="">Vegan News & Vegetarian Articles</a></p>
+                    <p><a href="">Latest Comments</a></p>
+                </div>
+                <div>
+                    <h4>Social media</h4>
+                    <p><a href="">KindMeal Widget</a></p>
+                    <p><a href="#">Facebook</a></p>
+                    <p><a href="#">Twitter</a></p>
+                    <p><a href="#">Instagram</a></p>
+                </div>
+                <div>
+                    <div>
+                    <h4>Mobile</h4>
+                    <p><a href="index.html">iPhone & iPod App</a></p>
+                    <p><a href="#">Android App</a></p>
+                </div>
+                <div>
+                    <h4>Exciting Promos</h4>
+                    <p><a href="index.html">Gadhimai: Ending Mass Slaughter</a></p>
+                    <p><a href="#">Free Meals</a></p>
+                    <p><a href="#">Food Bloggers</a></p>
+                    <p><a href="#">Uber CHIRP</a></p>
+                    <p><a href="">Jane Goodall Contest</a></p>
+                    <p><a href="">Win Digi iPhone 6</a></p>
+                    <p><a href="">Feed The Poor</a></p>
+                    <p><a href="">Win Superhero Gifts</a></p>
+                    <p><a href="">Win an iPad Mini 3</a></p>
+                </div>
+                </div>
+                <div>
+                    <h4>PetFinder.my</h4>
+                    <p><a href="">Adopt A Pet</a></p>
+                    <p><a href="#">Smartphone Apps</a></p>
+                    <p><a href="#">WAGazine</a></p>
+                    <p><a href="#">Discussion Forum</a></p>
+                    <p><a href="#">Medical Fund</a></p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright © KindMeal.my, 2014 - 2022. All rights reserved.</p>
+                <p>This website promotes compassionate, meat-free dining experience. Some food may contain eggs, dairy products or alcohol, please view individual listings for details.
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
