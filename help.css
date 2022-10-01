@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Montserrat:wght@500&family=Poppins:wght@300;500;700&family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+.container{
+    width: 80%;
+    display: flex;
+    margin: auto;
+    margin-top: 30px;
+    padding: 10px 20px;
+    gap: 40px;
+}
+
+.container>div:nth-child(1){
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 20%;
+}
+.container>div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 70%;
+    height: fit-content;
+    padding: 20px 20px 30px 30px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.container>div:nth-child(2) h2{
+    font-size: 20px;
+}
+.container>div:nth-child(2) h1{
+    font-size: 27px;
+}
+.container>div:nth-child(2) p{
+    font-size: 13px;
+}
+
+.container>div:nth-child(1)>div{
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;    text-align: center;
+    padding: 20px 0px;
+    border-radius: 5px;
+}
+
+.container>div:nth-child(1)>div>img{
+    width: 140px;
+}
+.container>div:nth-child(2)>div{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+body{
+    position: relative;
+}
+.merchant{
+    position: absolute;
+    z-index: 100;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    top: 30px;
+    left: 450px;
+    display: flex;
+    padding: 20px 30px 20px 30px;
+    width: fit-content;
+    transition: 0.4ms ease-in-out;
+}
+
+.merchant>div:nth-child(2){
+    width: 40%;
+}
+.merchant>div:nth-child(3){
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.merchant>div:nth-child(2)>img{
+    width: 150px;
+}
+
+.merchant>i{
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    cursor: pointer;
+}
+
+.disable{
+    visibility: hidden;
+}
+.able{
+    visibility:visible;
+}
