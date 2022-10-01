@@ -1,0 +1,50 @@
+.container>div:nth-child(2)>form{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0px;
+
+}
+.container>div:nth-child(2)>form>div{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.container>div:nth-child(2)>form>div>input{
+    width: 50%;
+    padding: 8px;
+}
+.container>div:nth-child(2)>form>div>input:focus{
+    outline: none;
+}
+.container>div:nth-child(2)>form>div>select:focus{
+    outline: none;
+}
+
+.container>div:nth-child(2)>form>div>select{
+    width: 50%;
+    padding: 8px;
+}
+.container>div:nth-child(2)>form>div>textarea{
+    width: 50%;
+    padding: 5px;
+}
+.container>div:nth-child(2)>form>div>textarea:focus{
+    outline: none;
+}
+.container>div:nth-child(2)>form>button{
+    width: 30%;
+    margin: auto;
+    margin-top: 40px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
