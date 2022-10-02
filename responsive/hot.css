@@ -1,0 +1,109 @@
+@media all and (max-width: 1100px) and (min-width: 601px){
+    .button-cards{
+        width: 90%;
+        grid-template-columns: repeat(4,1fr);
+    }
+    .button-cards>button {
+        font-size: 12px;
+    }
+
+    /* pasta fiesta */
+    .pasta-fiesta{
+        width: 90%;
+        padding: 10px;
+    }
+
+    .pasta-fiesta>div:nth-child(1)>div{
+        padding: 0px 20px;
+    }
+
+    /* .pasta-fiesta>div:nth-child(1) h2{
+        font-size: 20px;
+    }
+    .pasta-fiesta>div:nth-child(1)>div>div>a{
+        font-size: 12px;
+    } */
+    .pasta-fiesta>div:nth-child(2){
+        gap: 10px;
+    }
+    .pasta-fiesta>div:nth-child(2)>div>img{
+        width: 100%;
+        object-fit: cover;
+    }
+    .pasta-fiesta>div:nth-child(2)>div>h3{
+        font-size: 15px;
+        height: 40px;
+        bottom: 55px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .pasta-fiesta>div:nth-child(2)>div>h2{
+        right: 5px;
+    }
+
+    .secondBox>div>div:nth-child(1)>img {
+        width: 100px;
+        height: 100px;
+    }
+    .secondBox>div>div:nth-child(2)>div>img{
+        width: 25px;
+    }
+    .secondBox>div>div:nth-child(2)>div>h4{
+        font-size: 10px;
+    }
+    .secondBox>div>div:nth-child(2)>p {
+        font-size: 11px;
+    }
+    .secondBox>div>div:nth-child(2)>a{
+        font-size: 11px
+    }
+}
+
+@media all and (max-width: 601px) and (min-width: 201px){
+    .header>div{
+        width: 90%;
+    }
+    .button-cards{
+        width: 90%;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .pasta-fiesta{
+        width: 90%;
+        padding: 10px 5px;
+    }
+    .pasta-fiesta>div:nth-child(2)>div>img{
+        width: 100%;
+        object-fit: cover;
+    }
+    .pasta-fiesta>div:nth-child(2){
+        grid-template-columns: repeat(2,1fr);
+        gap: 10px;
+    }
+    .pasta-fiesta>div:nth-child(1){
+        margin-top: 10px;
+    }
+    .pasta-fiesta>div:nth-child(1)>div>div{
+        margin-top: 10px;
+    }
+    .pasta-fiesta>div:nth-child(1)>div{
+        flex-direction: column;
+    }
+    .pasta-fiesta>div:nth-child(2)>div>h3{
+        font-size: 15px;
+        height: 30px;
+        bottom: 38px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .pasta-fiesta>div:nth-child(2)>div>h2{
+        right: 5px;
+    }
+    .secondBox{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .secondBox>div>div:nth-child(1){
+        width: 100%;
+    }
+}

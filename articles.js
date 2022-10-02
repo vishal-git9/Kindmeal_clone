@@ -110,4 +110,77 @@ function pushData(Data){
         t_container.append(t_div1,t_div2)
         document.querySelector("body").append(t_container)
     })
+    document.querySelector("body").insertAdjacentHTML("afterend",`<div class="footer">
+    <div class="inside-footer">
+        <div class="details">
+            <div>
+                <h4>General</h4>
+                <p><a href="index.html">Home</a></p>
+                <p><a href="#">Sign up</a></p>
+                <p><a href="#">Businesses / Restaurateurs</a></p>
+                <p><a href="#">Advertising</a></p>
+                <p><a href="">About KindMeal.my</a></p>
+                <p><a href="">Help & FAQ</a></p>
+                <p><a href="">Terms & Conditions</a></p>
+                <p><a href="">Inspiring Partners</a></p>
+                <p><a href="">Lifestyle Ambassadors</a></p>
+                <p><a href="">Jobs & Careers</a></p>
+                <p><a href="">Contact Us</a></p>
+            </div>
+            <div>
+                <h4>Features</h4>
+                <p><a href="index.html">Meat-Free Deals</a></p>
+                <p><a href="#">Tasty Menus</a></p>
+                <p><a href="#">Kind Moments</a></p>
+                <p><a href="#">Meat-Free Recipes</a></p>
+                <p><a href="">Member Recommendations</a></p>
+                <p><a href="">Featured Restaurants</a></p>
+                <p><a href="">Vegetarian & Vegan Directory</a></p>
+                <p><a href="">Food Map</a></p>
+                <p><a href="">Become A Superhero</a></p>
+                <p><a href="">Vegan News & Vegetarian Articles</a></p>
+                <p><a href="">Latest Comments</a></p>
+            </div>
+            <div>
+                <h4>Social media</h4>
+                <p><a href="">KindMeal Widget</a></p>
+                <p><a href="#">Facebook</a></p>
+                <p><a href="#">Twitter</a></p>
+                <p><a href="#">Instagram</a></p>
+            </div>
+            <div>
+                <div>
+                <h4>Mobile</h4>
+                <p><a href="index.html">iPhone & iPod App</a></p>
+                <p><a href="#">Android App</a></p>
+            </div>
+            <div>
+                <h4>Exciting Promos</h4>
+                <p><a href="index.html">Gadhimai: Ending Mass Slaughter</a></p>
+                <p><a href="#">Free Meals</a></p>
+                <p><a href="#">Food Bloggers</a></p>
+                <p><a href="#">Uber CHIRP</a></p>
+                <p><a href="">Jane Goodall Contest</a></p>
+                <p><a href="">Win Digi iPhone 6</a></p>
+                <p><a href="">Feed The Poor</a></p>
+                <p><a href="">Win Superhero Gifts</a></p>
+                <p><a href="">Win an iPad Mini 3</a></p>
+            </div>
+            </div>
+            <div>
+                <h4>PetFinder.my</h4>
+                <p><a href="">Adopt A Pet</a></p>
+                <p><a href="#">Smartphone Apps</a></p>
+                <p><a href="#">WAGazine</a></p>
+                <p><a href="#">Discussion Forum</a></p>
+                <p><a href="#">Medical Fund</a></p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © KindMeal.my, 2014 - 2022. All rights reserved.</p>
+            <p>This website promotes compassionate, meat-free dining experience. Some food may contain eggs, dairy products or alcohol, please view individual listings for details.
+            </p>
+        </div>
+    </div>
+</div>`)
 }

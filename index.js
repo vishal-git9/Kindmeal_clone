@@ -1,57 +1,4 @@
 // building auto slider
-let img1 = document.querySelector(".slider>#images>#img1")
-let img2 = document.querySelector(".slider>#images>#img2")
-let slide_disc = document.querySelector(".slider>#disc")
-let slide_text = document.querySelector(".slider>#text")
-let small = [
-	"https://www.kindmeal.my/photos/shop/5/504-3481-m.jpg",
-	"https://www.kindmeal.my/photos/shop/5/549-4094-m.jpg",
-	"https://www.kindmeal.my/photos/shop/5/593-4434-m.jpg",
-	"https://www.kindmeal.my/photos/shop/2/277-1549-m.jpg",
-	"https://www.kindmeal.my/photos/shop/5/592-4483-m.jpg",
-	"https://www.kindmeal.my/photos/shop/6/603-4533-m.jpg",
-];
-let big = [
-	"https://www.kindmeal.my/photos/deal/7/700-4802-m.jpg",
-	"https://www.kindmeal.my/photos/deal/7/701-4904-m.jpg",
-	"https://www.kindmeal.my/photos/deal/7/708-4923-m.jpg",
-	"https://www.kindmeal.my/photos/deal/6/684-4446-m.jpg",
-	"https://www.kindmeal.my/photos/deal/6/644-3810-m.jpg",
-	"https://www.kindmeal.my/photos/deal/6/627-3532-m.jpg",
-];
-
-let text = [
-	"Tasty Midas Touch,15% Off",
-	"Nature Dining,10% Off-Camp Forest",
-	"Tasty, Joyful Moments, 10% Off -Moment of Joy",
-	"Mangga Natural Lifestyle,20% Off -Mangga Vegetarial Cafe",
-	"Lei Cha & Organic Meals, 20% Off -- Green Talk Healthy Organic & Cafe",
-	"wholesome Western Experience,20% Off -- Piccolo Cafe",
-];
-let disc = [
-	"15%",
-	"10%",
-	"20%",
-	"10%",
-	"15%",
-	"20%",
-];
-console.log(disc[0])
-
-let i = 0
-
-function slide(){
-    if(i==small.length){
-        i=0
-    }
-        img1.src = big[i]
-        img2.src = small[i]
-        slide_disc.innerText = disc[i]
-        slide_text.innerText = text[i]
-        i++
-}
-
-setInterval(slide,2000)
 
 // for login modal
 let login_email = document.querySelector("#email")
@@ -89,4 +36,38 @@ let take_signup = document.querySelector("#signup-html")
 take_signup.addEventListener("click",getSignup)
 function getSignup(){
 	window.location.href = "signup.html"
+}
+
+
+let nav_bar = document.querySelector(".fa-bars")
+let show_nav=document.querySelector(".nav-2")
+let show_ul = document.querySelector(".nav-2>ul")
+console.log(show_ul.innerHTML)
+nav_bar.addEventListener("click",showHam)
+function showHam(){
+	show_ul.innerHTML = ""
+	show_ul.insertAdjacentHTML("beforeend",`<li><a href="index.html">Home</a></li>
+	<li><a href="mealdeal.html">Meal Deals</a></li>
+	<li><a href="kindmoment.html">Kind Moments</a></li>
+	<li><a href="hotpicks.html">Hot picks</a></li>
+	<li><a href="recipes.html">Recipes</a></li>
+	<li><a href="directory.html">Directory</a></li>
+	<li><a href="articles.html">Articles</a></li>
+	<li><a href="help.html">Help</a></li><li><a href="#" id="click-login">Login</a></li>
+	<li><a href="#" id="click-signup">signup</a></li>`)
+	show_nav.style.width = "50%"
+	let log = document.querySelector("#click-login")
+	let sign = document.querySelector("#click-signup")
+	log.addEventListener("click",function(){
+		showpage()
+	})
+	sign.addEventListener("click",function(){
+		showSignup()
+	})
+}
+let close_nav = document.querySelector("#close-nav")
+close_nav.addEventListener("click",closeNav)
+
+function closeNav(){
+	show_nav.style.width = "0%"
 }

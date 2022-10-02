@@ -1,0 +1,76 @@
+@media all and (max-width: 1100px) and (min-width: 601px){
+    .header>div {
+        width: 90%;
+    }
+    .filter-btn{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    }
+    .pages{
+        width: 90%;
+    }
+
+    /* parent card */
+    .parent-box{
+        width: 90%;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .parent-box>div{
+        padding-bottom: 5px;
+    }
+
+    /* pages2 */
+    .pages2{
+        width: 90%;
+    }
+}
+@media all and (max-width: 601px) and (min-width: 201px){
+    .header>div {
+        width: 90%;
+        flex-direction: column;
+    }
+    .header>div>div:nth-child(1){
+        width: auto;
+    }
+    .header>div>div:nth-child(2){
+        width: auto;
+        margin: auto;
+        padding: 10px 20px;
+        height: 130px;
+    }
+    .filter-btn>div:nth-child(2){
+        flex-direction: column;
+    }
+    .filter-btn>div:nth-child(1)>button{
+        width: 30%;
+        font-size: 13px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .filter-btn{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    }
+    .pages{
+        width: 90%;
+    }
+
+    /* parent card */
+    .parent-box{
+        width: 90%;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .parent-box>div{
+        padding-bottom: 5px;
+    }
+
+    /* pages2 */
+    .pages2{
+        width: 90%;
+    }
+}

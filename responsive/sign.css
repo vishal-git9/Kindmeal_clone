@@ -1,0 +1,135 @@
+@media all and (max-width:1100px) and (min-width:601px){
+    .sign-parent{
+        flex-direction: column;
+        width: 90%;
+    }
+    .three{
+        width: 100%;
+        flex-direction: row;
+    }
+    .three>div{
+    height: 150px;
+    width: 186px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    .three>div>img{
+        width: 100px;
+    }
+    .three>div:nth-child(3)>h3{
+        font-size: 8px;
+    }
+    .three>div:nth-child(3)>a{
+        font-size: 9px;
+    }
+    .three>div:nth-child(3)>h2{
+        font-size: 14px;
+    }
+
+    /* form */
+    .half{
+        width: 90%;
+    }
+    .half>div>div{
+        left: 184px;
+        margin-top: 0px;
+    }
+    .half>button{
+        width: auto;
+    }
+
+    .image-bottom>div{
+        width: 90%;
+    }
+}
+@media all and (max-width:601px) and (min-width:201px){
+    .sign-parent{
+        flex-direction: column;
+        width: 90%;
+    }
+    .three{
+        width: 100%;
+    }
+    .three>div{
+    height: 150px;
+    width: 186px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+    .three>div>img{
+        width: 100px;
+    }
+    .three>div:nth-child(3)>h3{
+        font-size: 8px;
+    }
+    .three>div:nth-child(3)>a{
+        font-size: 9px;
+    }
+    .three>div:nth-child(3)>h2{
+        font-size: 14px;
+    }
+
+    /* form */
+    .half{
+        width: 90%;
+    }
+    .half>h2{
+        text-align: center;
+        font-size: 23px;
+    }
+    .half>p{
+        text-align: center;
+        font-size: 14px;
+    }
+    .half>div{
+        gap: 10px;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-bottom: 0px;
+        flex-direction: column;
+    }
+    .half>div>div{
+        position: relative;
+        left: 0px;
+        margin-top: 0px;
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 16px;
+    }
+    .half>div>div>p{
+        text-align: center;
+        font-size: 8px;
+    }
+    .half>div>p{
+        margin-right: 0px;
+    }
+    .half>button{
+        width: auto;
+    }
+
+    .image-bottom>div{
+        width: 90%;
+    }
+
+    #forName>div{
+        flex-direction: column;
+    }
+        #forGender>div{
+        display: flex;
+        flex-direction: row;
+        gap: 4px;
+    }
+    #SignUpemail{
+        margin-right: 50px;
+    }
+
+    .half>div>p{
+        margin-right: 84px;
+    }
+}

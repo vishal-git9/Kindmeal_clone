@@ -1,0 +1,358 @@
+@media all and (max-width: 1100px) and (min-width: 601px){
+    .nav-1{
+        width: 100%;
+        padding: 20px 0px;
+    }
+    .nav-1>div:nth-child(3)>a>i{
+        font-size: 18px;
+    }
+    .nav-1>div:nth-child(1){
+        display: flex;
+        align-items: center;
+    }
+    .nav-1>div:nth-child(1)>img{
+        width: 150px;
+    }
+    .nav-1>div:nth-child(4){
+        width: fit-content;
+        display: flex;
+        gap: 4px;
+    }
+    .nav-1>div:nth-child(4)>a{
+        font-size: 12px;
+    }
+
+    /* for nav2 */
+    .nav-2>ul{
+        width: fit-content;
+    }
+    .nav-2>ul>li{
+        font-size: 14px;
+    }
+
+    /* for login and signup modal */
+    #login-modal {
+        left: 101px;
+        width: 70%;
+        margin: auto;
+    }
+    #signup-modal{
+        left: 120px;
+        width: 70%;
+    }
+
+    /* for slideshow */
+
+    .slide-show{
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    /* news video */
+
+    .news-video{
+        width: 90%;
+    }
+    .news-video>.content{
+        justify-content: space-around;
+    }
+    .news-video>.content>div{
+        font-size: 18px;
+    }
+    .news-video>.content>ul{
+        display: flex;
+        gap: 5px;
+    }
+    .news-video>.content>ul>li{
+        font-size: 12px;
+    }
+
+    .news-video>.img-box{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto;
+        gap: 5px;
+    }
+
+    /* pre-footer content */
+    section >.content{
+        width: 90%;
+        margin: auto;
+    }
+    section >.content>h1{
+        width: 100%;
+        text-align: center;
+        font-size: 15px;
+    }
+    section >.content>div{
+        width: 100%;
+    }
+
+    /* boxes */
+    section >.boxes{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    /* info */
+    section >.content-2>div {
+        width: 100%;
+    }
+
+    .footer>.inside-footer{
+        width:80%;
+    }
+    .footer>.inside-footer>.details{
+        gap: 5px;
+    }
+
+    
+   
+}
+@media all and (max-width: 1100px) and (min-width: 714px) {
+    .news-video>.img-box{
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: auto;
+        gap: 5px;
+    }
+}
+
+@media all and (max-width: 601px) and (min-width: 200px) {
+    .nav-1{
+        width: 100%;
+    }
+    .nav-1 > div:nth-child(3){
+        display: none;
+    }
+    .nav-1 > div:nth-child(4){
+        display: none;
+    }
+    .nav-2>i{
+        display: block;
+        position: absolute;
+        left: 30px;
+        top: 20px;
+        font-size: 20px;
+        cursor: pointer;
+        color: white;
+    }
+    .nav-2{
+        background-color: #2BB673;
+        width: 0%;
+        position: absolute;
+        /* top: 0px; */
+        z-index: 100;
+        height: 100vh;
+        right: 0px;
+        transition: 0.5s ease-in-out;
+    }
+    .nav-1>div:nth-child(1)>img{
+        width: 200px;
+    }
+    .nav-1>i{
+        display: block;
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+    .nav-2>ul{
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    flex-direction: column;
+    margin-top: 40px;
+    }
+
+    /* login modal */
+
+    #login-modal{
+        width: 90%;
+        right: 8px;
+        top: 120px;
+        height: 350px;
+    }
+    #login-modal>img{
+        width: 200px;
+    }
+
+    #login-modal>h2{
+        font-size: 17px;
+    }
+    #login-modal>form{
+        margin-top: 20px;
+        width: 90%;
+    }
+    #login-modal>form>button{
+        width: 80%;
+        margin: auto;
+        font-size: 15px;
+    }
+
+    #login-modal>button{
+        width: 80%;
+        margin: auto;
+        font-size: 15px;
+    }
+    #login-modal>div{
+        padding: 0px;
+        margin-top: 10px;
+    }
+    #login-modal>div>a{
+        font-size: 12px;
+    }
+
+    /* signup-modal */
+
+    #signup-modal{
+        width: 90%;
+        right: 5px;
+        padding: 20px 5px;
+    }
+    #signup-modal>img{
+        width: 200px;
+    }
+    #signup-modal>h2{
+        font-size: 17px;
+    }
+    #signup-modal>p{
+        font-size: 14px;
+    }
+
+    #signup-modal>div:nth-child(5)>img{
+        width: 100px;
+    }
+    #signup-modal>div:nth-child(5)>div>h3{
+        font-size: 15px;
+    }
+    #signup-modal>div:nth-child(5)>div>p{
+        font-size: 10px;
+    }
+    #signup-modal>div:nth-child(6)>img{
+        width: 100px;
+    }
+    #signup-modal>div:nth-child(6)>div>h3{
+        font-size: 15px;
+    }
+    #signup-modal>div:nth-child(6)>div>p{
+        font-size: 10px;
+    }
+    #signup-modal>div:nth-child(7)>a{
+        font-size: 12px;
+    }
+
+
+    /* slide show */
+    .slide-show{
+        width: 90%;
+        margin-top: 40px;
+    }
+    .slide-show> div:nth-child(1)>.slider>#disc{
+        font-size: 10px;
+        width: 15%;
+        padding: 8px;
+    }
+    .slide-show> div:nth-child(1)>.slider>#text{
+        font-size: 10px;
+    }
+
+    /* news and video */
+
+    .news-video{
+        width: 90%;
+    }
+    .news-video >.img-box{
+        grid-template-columns: repeat(1,1fr);
+        margin-top: 10px;
+    }
+
+    .news-video>.content>div{
+        font-size: 18px;
+    }
+    .news-video>.content>ul>li{
+        font-size: 12px;
+        text-align: center;
+    }
+    .news-video>.content {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .news-video>.content>ul{
+        width: 100%;
+    }
+
+    /* prefooter */
+    section{
+        width: 90%;
+        margin: auto;
+        margin-top: 50px;
+    }
+    section >.content>h1{
+        font-size: 15px;
+        text-align: center;
+        line-height: 24px;
+    }
+    section >.content>div>img {
+        width: 150px;
+    }
+    section >.content>div>p {
+       font-size: 10px;
+    }
+    section >.content>div{
+        width: 100%;
+    }
+
+    /* boxes */
+    section>.boxes{
+        width: 90%;
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    /* content2 */
+    section >.content-2{
+        width: 90%;
+    }
+    section >.content-2>p{
+        font-size: 14px;
+    }
+
+    section >.content-2>div{
+        width: 90%;
+    }
+    section >.content-2>div>h1{
+        font-size: 15px;
+    }
+    section >.content-2>div>p{
+        font-size: 12px;
+    }
+
+    section>.featured{
+        width: 90%;
+    }
+    section>.info>div{
+        width: 100%;
+    }
+
+    /* footer */
+    .footer>.inside-footer{
+        width: 90%;
+    }
+
+    .footer>.inside-footer>.details>div p{
+        font-size: 9px;
+    }
+    .footer>.inside-footer>.details>div h4{
+        font-size: 13px;
+    }
+    .footer>.inside-footer>.details{
+        grid-template-columns: repeat(3,1fr);
+        gap: 10px;
+    }
+    .footer>.inside-footer>.details>div{
+        line-height: 14px;
+    }
+
+    /* copyright */
+    .footer>.inside-footer>.copyright>p{
+        font-size: 9px;
+        margin-top: 4px;
+    }
+}

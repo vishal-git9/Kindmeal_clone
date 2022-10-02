@@ -1,0 +1,63 @@
+@media all and (max-width:1100px) and (min-width:601px){
+    .container{
+        width: 90%;
+    }
+    .container>div:nth-child(1)>img{
+        width: 253px;
+    }
+    .container>div:nth-child(1){
+        height: 303px;
+    }
+    .container>div:nth-child(2){
+        padding: 10px 14px 0px 0px;
+    }
+    .container>div:nth-child(2) p {
+        font-size: 12px;
+        text-align: justify;
+    }
+    .container>div:nth-child(2)>div:nth-child(3)>button{
+        width: auto;
+    }
+}
+@media all and (max-width:601px) and (min-width:201px){
+    .container{
+        width: 90%;
+        gap: 10px;
+    }
+    .container>div:nth-child(1){
+        width: fit-content;
+        height: auto;
+    }
+    .container>div:nth-child(1)>img{
+        width: 153px;
+        height: 100%;
+    }
+    .container>div:nth-child(2){
+        padding: 10px 14px 0px 0px;
+        margin: auto;
+        gap: 10px;
+        height: fit-content;
+    }
+    .container>div:nth-child(2)>div>h2{
+        font-size: 14px;
+    }
+    .container>div:nth-child(2)>div:nth-child(3)>button{
+        font-size: 10px;
+        padding: 7px;
+    }
+    .container>div:nth-child(2) p {
+        font-size: 10px;
+        text-align: justify;
+    }
+    .container>div:nth-child(2)>div:nth-child(3)>button{
+        width: auto;
+    }
+    .pages{
+        width: 90%;
+    }
+    .container>div:nth-child(2)>div:nth-child(3) {
+        flex-direction: column;
+        width: auto;
+        align-items: flex-start;
+    }
+}

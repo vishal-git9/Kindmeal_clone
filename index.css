@@ -12,31 +12,34 @@
     margin: auto;
     justify-content: space-around;
 }
+.nav-1>i{
+    display: none;
+}
 
-.nav-1 > div:nth-child(2){
+.nav-1 > div:nth-child(3){
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 20%;
 }
-.nav-1 > div:nth-child(2)>a>i{
+.nav-1 > div:nth-child(3)>a>i{
     font-size: 35px;
     cursor: pointer;
     opacity: 0.3;
 }
-.nav-1 > div:nth-child(3){
+.nav-1 > div:nth-child(4){
     width: 30%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     font-size: 15px;
 }
-.nav-1 > div:nth-child(3)>a:nth-child(1){
+.nav-1 > div:nth-child(4)>a:nth-child(1){
     cursor: pointer;
     padding: 5px;
     text-decoration: none;
 }
-.nav-1 > div:nth-child(3)>a:nth-child(2){
+.nav-1 > div:nth-child(4)>a:nth-child(2){
     background-color: #35619F;
     padding: 5px;
     width: 90px;
@@ -46,7 +49,7 @@
     cursor: pointer;
     text-decoration: none;
 }
-.nav-1 > div:nth-child(3)>a:nth-child(3){
+.nav-1 > div:nth-child(4)>a:nth-child(3){
     background-color: #555555;
     padding: 5px;
     width: 70px;
@@ -56,7 +59,7 @@
     cursor: pointer;
     text-decoration: none;
 }
-.nav-1 > div:nth-child(3)>a:nth-child(4){
+.nav-1 > div:nth-child(4)>a:nth-child(4){
     border-left: 1px solid;
     padding: 5px;
     cursor: pointer;
@@ -69,7 +72,9 @@
     /* display: flex;
     justify-content: center; */
 }
-
+.nav-2>i{
+    display: none;
+}
 .nav-2>ul{
     width: 80%;
     display: flex;

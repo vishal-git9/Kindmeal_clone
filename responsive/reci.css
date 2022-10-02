@@ -1,0 +1,77 @@
+@media all and (max-width: 1100px) and (min-width: 601px){
+    .header>div{
+        width: 90%;
+    }
+    .header>div>div>div>button{
+        text-align: center;
+        font-size: 12px;
+        width: 30%;
+        padding: 0px;
+    }
+    .header>div>div>.share{
+        text-align: justify;
+        font-size: 12px;
+        width: fit-content;
+    }
+
+    .header>div>div{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* button cards */
+    .button-cards{
+        width: 90%;
+        grid-template-columns: repeat(4,1fr);
+    }
+
+    .pages{
+        width: 90%;
+    }
+
+    /* parent-box */
+    .parent-box{
+        width: 90%;
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    /* pages2 */
+    .pages2{
+        width: 90%;
+    }
+}
+
+@media all and (max-width: 601px) and (min-width: 201px){
+    .header>div{
+        width: 90%;
+    }
+    .header>div>div{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .header>div>div>div{
+        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .header>div>div>div>#inp{
+        width: auto;
+    }
+    .header>div>div>div>select{
+        width: auto;
+    }
+
+    .button-cards{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .pages{
+        width: 90%;
+    }
+    .pages2{
+        width: 90%;
+    }
+    .parent-box{
+        grid-template-columns: repeat(1,1fr);
+    }
+}

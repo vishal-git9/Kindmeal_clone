@@ -1,0 +1,147 @@
+
+@media all and (max-width: 1100px) and (min-width: 601px){
+    #search-browse>.inside-box{
+    width: 90%;
+}
+#search-browse>.inside-box>form{
+    gap: 5px;
+}
+#search-browse>.inside-box>form>input{
+    width: 100px;
+}
+
+/* for image */
+.image{
+    width: 90%;
+}
+
+/* pages clcik */
+.pages-click {
+    width: 90%;
+    justify-content: space-around;
+}
+.pages-click>div:nth-child(1){
+    gap: 5px;
+}
+/* for coupon cards */
+.coupon-cards{
+    width: 90%;
+    gap: 20px;
+    justify-content: space-between;
+}
+.coupon-cards>div h2{
+    font-size: 15px;
+}
+.coupon-cards>div>.get-coupon>button{
+    font-size: 14px;
+    width: fit-content;
+}
+.coupon-cards>div>.get-coupon>div>img{
+    width: 15px;
+}
+.coupon-cards>div>.final-touch>div:nth-child(1)>img {
+    width: 25px;
+}
+.coupon-cards>div>div>#discount {
+    background-color: white;
+    color: black;
+    width: 16%;
+    text-align: center;
+    border-radius: 60%;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    padding: 12px;
+    opacity: 0.8;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+}
+.bottom-img>div{
+    width: 90%;
+}
+}
+@media all and (max-width:601px) and (min-width:200px){
+    #search-browse{
+        margin-top: 20px;
+    }
+    #search-browse>.inside-box{
+        width: 90%;
+    }
+    #search-browse>.inside-box>div>h2{
+        font-size: 15px;
+    }
+    #search-browse>.inside-box>p{
+        font-size: 12px;
+    }
+    #search-browse>.inside-box>form{
+        flex-direction: column;
+        gap: 10px;
+    }
+    #search-browse>.inside-box>form>input{
+        width: 100%;
+    }
+    #search-browse>.inside-box>form>select{
+        width: 100%;
+    }
+    #search-browse>.inside-box>form>button:nth-child(4){
+        width: 100%;
+        padding: 8px;
+    }
+    #search-browse>.inside-box>form>button:nth-child(5){
+        width: 100%;
+        padding: 8px;
+    }
+
+    /* image */
+    .image{
+        width: 90%;
+    }
+
+    /* pages click */
+    .pages-click{
+        width: 90%;
+        justify-content: space-around;
+    }
+    .pages-click>div:nth-child(1){
+        width: auto;
+        gap: 5px;
+    }
+
+    /* coupon cards */
+    .coupon-cards{
+        width: 90%;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .coupon-cards>div>div>#discount{
+        font-size: 15px;
+        padding: 8px;
+    }
+    .coupon-cards>div>div>#name>h2{
+        font-size: 18px;
+    }
+    .coupon-cards>div>.get-coupon>button{
+        width: auto;
+        font-size: 14px;
+    }
+    .coupon-cards>div>.get-coupon>div>img{
+        width: 17px;
+    }
+    .coupon-cards>div>.final-touch p{
+        font-size: 11px;
+    }
+    .coupon-cards>div>.final-touch h2{
+        font-size: 17px;
+    }
+    .coupon-cards>div>.final-touch>div:nth-child(1){
+        width: 35%;
+    }
+    .coupon-cards>div>.final-touch>div:nth-child(1)>img{
+        width: 25px;
+    }
+
+    /* bottom image */
+    .bottom-img>div{
+        width: 100%;
+    }
+}

@@ -21,7 +21,7 @@ function getData(e){
         user_gender_female:getform.female.value,
     }
     let isPresent = false
-    signupData.forEach(el => {
+    arrData.forEach(el => {
         if(el.user_email==objData.user_email && el.user_pass == objData.user_pass){
             isPresent = true
         }
@@ -38,6 +38,7 @@ function getData(e){
             localStorage.setItem("userData",JSON.stringify(arrData))
             window.alert("Signed up sucessfully")
             getform.reset()
+            window.location.href = "index.html"
         }
     }
     

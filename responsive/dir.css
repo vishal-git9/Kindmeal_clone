@@ -1,0 +1,120 @@
+@media all and (max-width:1100px) and (min-width:601px){
+    .header>div{
+        width: 90%;
+    }
+    .header>div>div>div>button{
+        text-align: center;
+        font-size: 12px;
+        width: 30%;
+        padding: 0px;
+    }
+    .header>div>div>.share{
+        text-align: justify;
+        font-size: 12px;
+        width: fit-content;
+    }
+
+    .header>div>div{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* button-cards */
+    .button-cards{
+        width: 90%;
+        grid-template-columns: repeat(4,1fr);
+    }
+    /* pages */
+    .pages{
+        width: 90%;
+    }
+
+    /* parent -cont */
+    .parent-cont{
+        width: 90%;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .parent-cont>div h2{
+        font-size: 20px;
+    }
+    .parent-cont>div p{
+        font-size: 13px;
+    }
+    .parent-cont>div>.fourth>a{
+        font-size: 12px;
+    }
+    .parent-cont>div>.fourth{
+        gap: 5px;
+        align-items: center;
+    }
+    .parent-cont>div>.second{
+        height: 140px;
+    }
+    .parent-cont>div>.second h4{
+        font-size: 15px;
+    }
+    .parent-cont>div>.second p{
+        font-size: 12px;
+    }
+
+    /* pages2 */
+    .page{
+        width: 90%;
+    }
+}
+
+@media all and (max-width:601px) and (min-width:201px){
+    .header>div{
+        width: 90%;
+    }
+    .header>div>div{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .header>div>div>div{
+        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .header>div>div>div>#inp{
+        width: auto;
+    }
+    .header>div>div>div>select{
+        width: auto;
+    }
+    .button-cards{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .pages{
+        width: 90%;
+    }
+    .pages2{
+        width: 90%;
+    }
+    .parent-cont{
+        width: 90%;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .parent-cont>div>.fourth>a{
+        font-size: 12px;
+    }
+    .parent-cont>div h2{
+        font-size: 20px;
+    }
+    .parent-cont>div p{
+        font-size: 13px;
+    }
+    .parent-cont>div>.fourth{
+        gap: 5px;
+        align-items: center;
+    }
+    .parent-cont>div>.second{
+        height: 140px;
+    }
+    .parent-cont>div>.second h4{
+        font-size: 15px;
+    }
+    .parent-cont>div>.second p{
+        font-size: 12px;
+    }
+}
