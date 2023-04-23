@@ -2,7 +2,7 @@
 
 <h1 align="center" id="title">Kindmeal</h1>
 
-<p align="center"><img src="https://socialify.git.ci/vishal-git9/Mailchimp_clone/image?language=1&amp;owner=1&amp;name=1&amp;stargazers=1&amp;theme=Light" alt="project-image"></p>
+<p align="center"><img src="https://socialify.git.ci/vishal-git9/Kindmeal_clone/image?language=1&owner=1&name=1&stargazers=1&theme=Light" alt="project-image"></p>
 
 <p id="description">KindMeal is a platform that helps users discover vegan and vegetarian restaurants in their area. It also offers discounts and promotions on plant-based meals at participating restaurants. 
 # Mailchimp_clone</p>
